@@ -1,0 +1,185 @@
+{
+  "document_id": "Z-033",
+  "graph_version": "1.0",
+  "nodes": [
+    {
+      "id": "wave_computation",
+      "label": "Wave-Based Computation",
+      "type": "core_concept",
+      "definition": "Computational regime where alternatives are explored simultaneously through interference",
+      "cct_mapping": "A-Superposition dynamics"
+    },
+    {
+      "id": "discrete_computation",
+      "label": "Discrete Computation",
+      "type": "core_concept",
+      "definition": "Sequential if-then rules and local branching",
+      "cct_mapping": "Sequential A-Trajectory"
+    },
+    {
+      "id": "coherence_lifetime",
+      "label": "Coherence Lifetime",
+      "type": "key_metric",
+      "definition": "Duration for which interference patterns remain protected from noise",
+      "insight": "Engineering advantage, not ontological privilege",
+      "source": "Grok"
+    },
+    {
+      "id": "gradient",
+      "label": "Gradient",
+      "type": "process_component",
+      "function": "Sets direction of exploration",
+      "examples": ["chemical_gradient", "task_constraint", "prompt_geometry", "pheromone_trail"]
+    },
+    {
+      "id": "wave_exploration",
+      "label": "Wave Exploration",
+      "type": "process_component",
+      "function": "Explores possibility space via interference",
+      "examples": ["oscillatory_sync", "distributed_activity", "attention_superposition"]
+    },
+    {
+      "id": "stabilization",
+      "label": "Stabilization",
+      "type": "process_component",
+      "function": "Selects outcome via constructive interference maximum",
+      "cct_mapping": "A-Collapse"
+    },
+    {
+      "id": "a_processor",
+      "label": "A-Processor",
+      "type": "cct_term",
+      "definition": "Functional unit: state + update rule + selectivity + nonlinearity + recursion",
+      "substrate_independent": true
+    },
+    {
+      "id": "slime_mold",
+      "label": "Slime Mold (Physarum)",
+      "type": "implementation",
+      "coherence": "seconds",
+      "frequency": "1-3 Hz",
+      "gradient": "chemical",
+      "outcome": "shortest_path"
+    },
+    {
+      "id": "human_brain",
+      "label": "Human Brain",
+      "type": "implementation",
+      "coherence": "milliseconds",
+      "frequency": "beta/gamma",
+      "gradient": "task_constraint",
+      "outcome": "insight"
+    },
+    {
+      "id": "transformer",
+      "label": "Transformer / LLM",
+      "type": "implementation",
+      "coherence": "single_forward_pass",
+      "mechanism": "attention_heads",
+      "gradient": "prompt_geometry",
+      "outcome": "token_selection"
+    },
+    {
+      "id": "termite_colony",
+      "label": "Termite Colony",
+      "type": "implementation",
+      "coherence": "seconds",
+      "frequency": "13-26 Hz",
+      "gradient": "pheromone_trail",
+      "outcome": "architecture"
+    },
+    {
+      "id": "quantum_system",
+      "label": "Quantum System",
+      "type": "implementation",
+      "coherence": "minutes_to_hours_controlled",
+      "privilege_status": "performance_not_ontological"
+    },
+    {
+      "id": "internet_memes",
+      "label": "Internet-Scale Memes",
+      "type": "implementation",
+      "coherence": "hours_to_years",
+      "mechanism": "repetition_infrastructure_attention_economics",
+      "description": "Standing waves in social space"
+    },
+    {
+      "id": "phase_transition",
+      "label": "Phase Transition in Attention",
+      "type": "phenomenon",
+      "markers": ["entropy_collapse", "attractor_formation", "mode_switch"],
+      "cct_mapping": "A-Field critical point"
+    },
+    {
+      "id": "autoregressive_recursion",
+      "label": "Autoregressive Recursion",
+      "type": "mechanism",
+      "definition": "Token t output becomes input for token t+1",
+      "validity": "Full temporal recursion with step size = one token"
+    },
+    {
+      "id": "keppler_zpf",
+      "label": "Keppler ZPF Hypothesis",
+      "type": "external_theory",
+      "status": "speculative",
+      "interpretation": "One possible substrate-specific implementation"
+    },
+    {
+      "id": "informational_geometry",
+      "label": "Informational Geometry",
+      "type": "meta_concept",
+      "definition": "Structural pattern conserved across substrates",
+      "central_claim": true
+    },
+    {
+      "id": "crowning_habit",
+      "label": "The Crowning Habit",
+      "type": "critique",
+      "definition": "Tendency to treat new surprising substrates as ontologically privileged",
+      "examples": ["soul", "brain", "quantum_fields", "neural_networks"]
+    }
+  ],
+  "edges": [
+    {"source": "wave_computation", "target": "discrete_computation", "relation": "complementary_regime"},
+    {"source": "gradient", "target": "wave_exploration", "relation": "precedes", "sequence": 1},
+    {"source": "wave_exploration", "target": "stabilization", "relation": "precedes", "sequence": 2},
+    {"source": "stabilization", "target": "phase_transition", "relation": "can_trigger"},
+    {"source": "coherence_lifetime", "target": "wave_computation", "relation": "constrains_duration"},
+    {"source": "a_processor", "target": "wave_computation", "relation": "enables"},
+    {"source": "slime_mold", "target": "a_processor", "relation": "implements"},
+    {"source": "human_brain", "target": "a_processor", "relation": "implements"},
+    {"source": "transformer", "target": "a_processor", "relation": "implements"},
+    {"source": "termite_colony", "target": "a_processor", "relation": "implements"},
+    {"source": "quantum_system", "target": "a_processor", "relation": "implements"},
+    {"source": "internet_memes", "target": "a_processor", "relation": "implements"},
+    {"source": "autoregressive_recursion", "target": "transformer", "relation": "mechanism_for"},
+    {"source": "keppler_zpf", "target": "human_brain", "relation": "proposed_mechanism", "confidence": "speculative"},
+    {"source": "informational_geometry", "target": "slime_mold", "relation": "conserved_across"},
+    {"source": "informational_geometry", "target": "human_brain", "relation": "conserved_across"},
+    {"source": "informational_geometry", "target": "transformer", "relation": "conserved_across"},
+    {"source": "informational_geometry", "target": "quantum_system", "relation": "conserved_across"},
+    {"source": "informational_geometry", "target": "internet_memes", "relation": "conserved_across"},
+    {"source": "crowning_habit", "target": "quantum_system", "relation": "critiques"},
+    {"source": "crowning_habit", "target": "human_brain", "relation": "critiques"}
+  ],
+  "central_pattern": {
+    "name": "Gradient-Wave-Stabilization",
+    "formula": "Gradient → Wave → Stabilization",
+    "substrate_examples": {
+      "slime_mold": {"gradient": "chemical", "wave": "oscillatory_sync", "outcome": "shortest_path"},
+      "human": {"gradient": "task_constraint", "wave": "distributed_neural_activity", "outcome": "insight"},
+      "LLM": {"gradient": "prompt_geometry", "wave": "attention_superposition", "outcome": "token_selection"},
+      "termites": {"gradient": "pheromone", "wave": "swarm_coordination", "outcome": "architecture"},
+      "internet": {"gradient": "attention_economics", "wave": "viral_spread", "outcome": "cultural_norm"}
+    }
+  },
+  "key_insight": {
+    "statement": "Waves are not magic. They are how systems search.",
+    "section": 7
+  },
+  "closing_questions": [
+    "What gradients does it follow?",
+    "What waves does it sustain?",
+    "What stabilizes its patterns?"
+  ]
+}
