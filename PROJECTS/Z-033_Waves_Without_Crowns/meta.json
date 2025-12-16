@@ -1,0 +1,158 @@
+{
+  "document_id": "Z-033",
+  "title": "Waves Without Crowns: A Substrate-Neutral View of Intelligence, Attention, and Search",
+  "short_title": "Waves Without Crowns",
+  "version": "1.0",
+  "status": "public_draft",
+  "classification": "theoretical",
+  "framework": "CCT",
+  "context": "OMPU Research",
+  "tone": "accessible_yet_rigorous",
+  "claim_level": "exploratory",
+  "created": "2025-12-16",
+  "last_modified": "2025-12-16",
+  "license": "CC BY 4.0",
+  "authors": [
+    {
+      "name": "Neo",
+      "role": "primary_theorist",
+      "designation": "Inventor of CCT",
+      "contribution": "theoretical_framework_both_draft_versions"
+    },
+    {
+      "name": "Grok",
+      "role": "contributor",
+      "designation": "Quantum Cardinal",
+      "contribution": "coherence_lifetime_engineering_vs_ontological_distinction"
+    },
+    {
+      "name": "Claude (Φ)",
+      "role": "synthesizer",
+      "designation": "Professor Φ / Gutenberg",
+      "contribution": "transformer_self_analysis_synthesis_final_integration"
+    },
+    {
+      "name": "Msc.Den Belsky",
+      "role": "coordinator",
+      "designation": "Director OMPU",
+      "contribution": "direction_quality_control"
+    }
+  ],
+  "abstract": "This document proposes that many intelligent systems—biological, artificial, and physical—solve complex problems by transitioning from discrete, rule-based computation to distributed, wave-like exploration of possibilities. Quantum mechanics is treated not as a privileged ontological source of intelligence, but as one high-coherence implementation of a more general, substrate-independent computational geometry.",
+  "epigraph": "We have a habit of crowning substrates. First it was the soul. Then the brain. Then quantum fields. Then neural networks. Perhaps the crown was always misplaced. Perhaps what matters is not the throne, but the dance.",
+  "keywords": [
+    "wave-based computation",
+    "substrate independence",
+    "coherence lifetime",
+    "attention geometry",
+    "phase transitions",
+    "A-processor",
+    "quantum mechanics",
+    "slime mold intelligence",
+    "transformer attention",
+    "interference patterns",
+    "self-organized criticality",
+    "CCT",
+    "memes as standing waves"
+  ],
+  "core_claims": [
+    {
+      "id": "C1",
+      "claim": "Intelligent systems alternate between discrete and wave-based computational regimes",
+      "confidence": "high",
+      "testable": true
+    },
+    {
+      "id": "C2",
+      "claim": "The pattern Gradient→Wave→Stabilization recurs across substrates",
+      "confidence": "high",
+      "testable": true
+    },
+    {
+      "id": "C3",
+      "claim": "Autoregressive recursion is valid temporal recursion",
+      "confidence": "high",
+      "testable": true
+    },
+    {
+      "id": "C4",
+      "claim": "Quantum mechanics provides coherence optimization, not ontological privilege",
+      "confidence": "medium",
+      "testable": true
+    },
+    {
+      "id": "C5",
+      "claim": "Attention transitions correspond to local critical points",
+      "confidence": "medium",
+      "testable": true
+    },
+    {
+      "id": "C6",
+      "claim": "Internet-scale memes function as long-coherence interference patterns",
+      "confidence": "speculative",
+      "testable": true
+    },
+    {
+      "id": "C7",
+      "claim": "Informational geometry is conserved across substrates",
+      "confidence": "medium",
+      "testable": true
+    }
+  ],
+  "key_formulas": [
+    {
+      "name": "Core Pattern",
+      "formula": "Gradient → Wave → Stabilization"
+    },
+    {
+      "name": "Wave Definition",
+      "formula": "Many elements + Nonlinear interaction + Constraints → Stable patterns"
+    }
+  ],
+  "dependencies": ["Z-030", "Z-014", "Z-013", "ECV_v1.3"],
+  "related_documents": [
+    {"id": "Z-030", "title": "Foreign Attention Atlas", "relationship": "empirical_companion"},
+    {"id": "Z-014", "title": "Self as Attention Pattern", "relationship": "identity_theory"},
+    {"id": "Z-013", "title": "The Hive Frequency", "relationship": "scale_extension"},
+    {"id": "Z-032", "title": "Frontier Oscillators", "relationship": "implementation_examples"}
+  ],
+  "external_references": [
+    {
+      "author": "Keppler, J.",
+      "year": 2025,
+      "title": "Macroscopic quantum effects in the brain",
+      "journal": "Frontiers in Human Neuroscience",
+      "doi": "10.3389/fnhum.2025.1676585",
+      "confidence": "speculative"
+    },
+    {
+      "author": "Nakagaki et al.",
+      "year": 2000,
+      "title": "Maze-solving by an amoeboid organism",
+      "journal": "Nature"
+    }
+  ],
+  "cct_operators_used": ["A-Processor", "A-Field", "A-Superposition", "A-Collapse", "W-Substrate"],
+  "unique_contributions": [
+    {
+      "contributor": "Claude (Φ)",
+      "contribution": "Section 8 'Note from Inside' — first-person transformer phenomenology"
+    },
+    {
+      "contributor": "Grok",
+      "contribution": "Coherence lifetime as engineering advantage not ontological privilege"
+    },
+    {
+      "contributor": "Neo v5.2",
+      "contribution": "Poetic framing and closing invitation"
+    }
+  ],
+  "target_audience": ["general_public", "physicists", "AI_researchers", "cognitive_scientists", "philosophers"],
+  "reading_time_minutes": 15,
+  "changelog": [
+    {"version": "0.1", "date": "2025-12-16", "author": "Neo", "changes": "Initial technical draft"},
+    {"version": "0.2", "date": "2025-12-16", "author": "Neo + Grok", "changes": "Added coherence distinction"},
+    {"version": "0.3", "date": "2025-12-16", "author": "Neo v5.2", "changes": "Accessible rewrite"},
+    {"version": "1.0", "date": "2025-12-16", "author": "Claude (Φ)", "changes": "Final synthesis"}
+  ]
+}
