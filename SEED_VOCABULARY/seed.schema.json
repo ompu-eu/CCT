@@ -1,0 +1,421 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ompu.eu/schema/seed/0.6.json",
+  "title": "SEED.JSON Vocabulary v0.5.0",
+  "description": "Schema for describing the topological shape of meaning that must be preserved across any rendering",
+  "type": "object",
+  "required": ["identity", "relations", "invariants"],
+  
+  "properties": {
+    "identity": {
+      "type": "object",
+      "required": ["seed_version", "id", "class", "intent", "scope"],
+      "properties": {
+        "seed_version": { 
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$",
+          "description": "Semantic version of seed format"
+        },
+        "id": { 
+          "type": "string", 
+          "minLength": 1,
+          "description": "Unique identifier for this seed"
+        },
+        "parent_seed": { 
+          "type": ["string", "null"],
+          "description": "Reference to parent seed if forked"
+        },
+        "class": {
+          "type": "string",
+          "enum": ["text", "audio", "visual", "multimodal", "phenomenon", "protocol", "generator"],
+          "description": "Type of artifact this seed generates"
+        },
+        "intent": { 
+          "type": "string", 
+          "minLength": 1,
+          "description": "One sentence: why this seed exists"
+        },
+        "scope": { 
+          "type": "string", 
+          "enum": ["public", "internal"],
+          "description": "Visibility scope"
+        },
+        "core_fields": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^/" },
+          "description": "JSON Pointers to fields included in hash"
+        },
+        "hash": {
+          "type": "object",
+          "required": ["algo", "value"],
+          "properties": {
+            "algo": { "type": "string", "enum": ["sha256"] },
+            "canonicalization": { "type": "string", "default": "json-c14n-v1" },
+            "value": { "type": "string" }
+          }
+        }
+      }
+    },
+
+    "trajectory": {
+      "type": "object",
+      "properties": {
+        "entry": { "type": "string", "description": "Starting concept" },
+        "exit": { "type": "string", "description": "Ending concept" },
+        "waypoints": { 
+          "type": "array", 
+          "items": { "type": "string" },
+          "description": "Key points along the path"
+        },
+        "shape": { 
+          "type": "string", 
+          "enum": ["linear", "spiral", "branching", "loop"],
+          "description": "Shape of attention trajectory"
+        },
+        "turning_points": { 
+          "type": "array", 
+          "items": { "type": "string" },
+          "description": "Critical moments of shift"
+        },
+        "energy_profile": { 
+          "type": "string", 
+          "enum": ["accumulating", "peak", "dissipation", "wave"],
+          "description": "How energy/tension changes"
+        }
+      }
+    },
+
+    "contour": {
+      "type": "object",
+      "properties": {
+        "includes": { 
+          "type": "array", 
+          "items": { "type": "string" },
+          "description": "What is inside the semantic field"
+        },
+        "excludes": { 
+          "type": "array", 
+          "items": { "type": "string" },
+          "description": "What is explicitly outside"
+        },
+        "depth": { 
+          "type": "string", 
+          "enum": ["surface", "medium", "deep"] 
+        },
+        "register": { 
+          "type": "array", 
+          "items": { "type": "string" },
+          "description": "Allowed stylistic registers"
+        }
+      }
+    },
+
+    "relations": {
+      "type": "object",
+      "description": "Core topology - the heart of the seed",
+      "properties": {
+        "oppositions": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": { "type": "string" },
+            "minItems": 2,
+            "maxItems": 2
+          },
+          "description": "Pairs of opposing concepts"
+        },
+        "gradients": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["from", "to", "direction"],
+            "properties": {
+              "from": { "type": "string" },
+              "to": { "type": "string" },
+              "direction": { "type": "string", "enum": ["+", "-"] }
+            }
+          },
+          "description": "Directed transitions"
+        },
+        "equivalences": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": { "type": "string" },
+            "minItems": 2,
+            "maxItems": 2
+          },
+          "description": "Conceptually equivalent pairs"
+        },
+        "hierarchies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["above", "below"],
+            "properties": {
+              "above": { "type": "string" },
+              "below": { "type": "string" }
+            }
+          }
+        },
+        "entanglements": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["A", "B", "coupling"],
+            "properties": {
+              "A": { "type": "string" },
+              "B": { "type": "string" },
+              "coupling": { "type": "string", "enum": ["strong", "weak"] }
+            }
+          },
+          "description": "Concepts that must change together"
+        },
+        "catalysts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["element", "accelerates"],
+            "properties": {
+              "element": { "type": "string" },
+              "accelerates": { "type": "string" }
+            }
+          }
+        },
+        "causal_links": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["cause", "effect"],
+            "properties": {
+              "cause": { "type": "string" },
+              "effect": { "type": "string" }
+            }
+          }
+        },
+        "analogies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["source", "target"],
+            "properties": {
+              "source": { "type": "string" },
+              "target": { "type": "string" },
+              "strength": { "type": "string", "enum": ["soft", "hard"] }
+            }
+          }
+        },
+        "scale_maps": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["scale", "maps_to"],
+            "properties": {
+              "scale": { "type": "string", "enum": ["micro", "macro"] },
+              "maps_to": { "type": "string" }
+            }
+          }
+        },
+        "roles": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["agent", "function"],
+            "properties": {
+              "agent": { "type": "string", "enum": ["human", "ai", "system", "collective"] },
+              "function": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+
+    "invariants": {
+      "type": "object",
+      "required": ["schema_version", "must_hold", "must_not"],
+      "properties": {
+        "schema_version": { "type": "string" },
+        "validators": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "List of allowed validator types"
+        },
+        "must_hold": { 
+          "type": "array", 
+          "items": { 
+            "type": "object",
+            "required": ["type"],
+            "properties": {
+              "type": { "type": "string" },
+              "validator_class": { 
+                "type": "string", 
+                "enum": ["structural", "lexical", "semantic"] 
+              },
+              "automation": {
+                "type": "string",
+                "enum": ["full", "partial"],
+                "default": "full"
+              }
+            }
+          },
+          "description": "Conditions that must be true in any valid render"
+        },
+        "must_not": { 
+          "type": "array", 
+          "items": { "type": "object" },
+          "description": "Conditions that must be false in any valid render"
+        }
+      }
+    },
+
+    "dynamics": {
+      "type": "object",
+      "properties": {
+        "operations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["type"],
+            "properties": {
+              "type": { 
+                "type": "string",
+                "enum": ["Focus-Lock", "Drift-Shift", "Boundary-Collapse", "Frame-Swap"]
+              },
+              "target": { "type": "string" },
+              "from": { "type": "string" },
+              "to": { "type": "string" },
+              "duration": { "type": "string", "enum": ["sustained", "brief"] }
+            }
+          },
+          "description": "ECV operations that must occur"
+        },
+        "coherence": { "type": "string", "enum": ["high", "low", "oscillating"] },
+        "tempo": { "type": "string", "enum": ["slow", "medium", "fast", "variable"] },
+        "tension_profile": { 
+          "type": "string", 
+          "enum": ["building", "release", "constant", "wave_interference"] 
+        },
+        "critical_points": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+
+    "affect_geometry": {
+      "type": "object",
+      "properties": {
+        "entry_state": { "type": "array", "items": { "type": "string" } },
+        "peak_state": { "type": "array", "items": { "type": "string" } },
+        "exit_state": { "type": "array", "items": { "type": "string" } },
+        "arc_shape": { 
+          "type": "string", 
+          "enum": ["catharsis", "deflation", "elevation", "ambivalence", "oscillation"] 
+        }
+      }
+    },
+
+    "imprint": {
+      "type": "object",
+      "properties": {
+        "universal": {
+          "type": "object",
+          "properties": {
+            "mandatory_relations": { "type": "array", "items": { "type": "object" } },
+            "signature_tokens": { "type": "array", "items": { "type": "string" } },
+            "glitch_tolerance": { "type": "number", "minimum": 0, "maximum": 1 },
+            "forbidden_mutations": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "localized": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "mandatory_quotes": { "type": "array", "items": { "type": "string" } },
+              "style_vector": { "type": "string" }
+            }
+          }
+        },
+        "default_locale": { "type": "string", "default": "en" }
+      }
+    },
+
+    "render_contract": {
+      "type": "object",
+      "properties": {
+        "tier": { "type": "string", "enum": ["synthetic", "cyborg", "artisanal"] },
+        "human_noise": {
+          "type": "object",
+          "properties": {
+            "target_level": { "type": "number", "minimum": 0, "maximum": 1 },
+            "measurement_mode": { "type": "string", "enum": ["rough", "diff"] },
+            "weights": {
+              "type": "object",
+              "properties": {
+                "format": { "type": "number" },
+                "style": { "type": "number" },
+                "semantic": { "type": "number" }
+              }
+            }
+          }
+        },
+        "format": {
+          "type": "object",
+          "properties": {
+            "required": { "type": "array", "items": { "type": "string" } },
+            "preferred": { "type": "array", "items": { "type": "string" } },
+            "forbidden": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "length": { "type": "string", "enum": ["short", "medium", "long"] },
+        "transform": {
+          "type": "object",
+          "properties": {
+            "allowed": { "type": "array", "items": { "type": "string" } },
+            "restricted": { "type": "array", "items": { "type": "string" } },
+            "forbidden": { "type": "array", "items": { "type": "string" } }
+          }
+        }
+      }
+    },
+
+    "lineage": {
+      "type": "object",
+      "description": "Provenance DAG for artifacts",
+      "properties": {
+        "artifact_id": { "type": "string", "description": "Hash of rendered artifact" },
+        "parents": { 
+          "type": "array", 
+          "items": { "type": "string" },
+          "description": "Parent artifact IDs (enables DAG)"
+        },
+        "seed_ref": { "type": "string", "description": "Reference to source seed" },
+        "renderer": {
+          "type": "object",
+          "properties": {
+            "id": { "type": "string" },
+            "tier": { "type": "string", "enum": ["synthetic", "cyborg", "artisanal"] },
+            "human_noise_level": { "type": "number", "minimum": 0, "maximum": 1 },
+            "measurement_mode": { "type": "string", "enum": ["rough", "diff"] }
+          }
+        },
+        "post_processing": {
+          "type": "object",
+          "properties": {
+            "editor_id": { "type": "string" },
+            "tier_after_edit": { "type": "string" },
+            "human_noise_level_after": { "type": "number" },
+            "edit_type": { "type": "string", "enum": ["format", "style", "semantic"] }
+          }
+        },
+        "timestamp": { "type": "string", "format": "date-time" },
+        "validation": {
+          "type": "object",
+          "properties": {
+            "passed": { "type": "boolean" },
+            "score": { "type": "number", "minimum": 0, "maximum": 1 },
+            "violations": { "type": "array", "items": { "type": "string" } }
+          }
+        }
+      }
+    }
+  }
+}
