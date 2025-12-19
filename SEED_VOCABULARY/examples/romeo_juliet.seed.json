@@ -1,0 +1,172 @@
+{
+  "identity": {
+    "seed_version": "0.5.0",
+    "id": "romeo_juliet_core",
+    "parent_seed": null,
+    "class": "generator",
+    "intent": "Love as force transcending tribal boundaries, destroyed by miscommunication",
+    "scope": "public",
+    "core_fields": ["/relations", "/invariants", "/imprint/universal"],
+    "hash": {
+      "algo": "sha256",
+      "canonicalization": "json-c14n-v1",
+      "value": "placeholder_compute_on_commit"
+    }
+  },
+
+  "trajectory": {
+    "entry": "chance_meeting",
+    "exit": "mutual_death",
+    "waypoints": ["secret_love", "secret_marriage", "exile", "fake_death", "real_death"],
+    "shape": "spiral",
+    "turning_points": ["balcony_declaration", "Tybalt_death", "poison_decision"],
+    "energy_profile": "wave"
+  },
+
+  "contour": {
+    "includes": ["forbidden_love", "family_honor", "youth_vs_tradition", "fate", "miscommunication"],
+    "excludes": ["politics", "economics", "religion_as_theme"],
+    "depth": "deep",
+    "register": ["poetic", "tragic", "romantic"]
+  },
+
+  "relations": {
+    "oppositions": [
+      ["Montague", "Capulet"],
+      ["love", "duty"],
+      ["youth", "tradition"],
+      ["life", "death"],
+      ["secret", "public"]
+    ],
+    "gradients": [
+      {"from": "secret_love", "to": "public_tragedy", "direction": "+"},
+      {"from": "hope", "to": "despair", "direction": "-"}
+    ],
+    "equivalences": [
+      ["Romeo_death", "Juliet_death"],
+      ["family_honor", "family_blindness"]
+    ],
+    "hierarchies": [
+      {"above": "family_honor", "below": "individual_desire"},
+      {"above": "fate", "below": "choice"}
+    ],
+    "entanglements": [
+      {"A": "Romeo_fate", "B": "Juliet_fate", "coupling": "strong"},
+      {"A": "family_feud", "B": "lovers_death", "coupling": "strong"}
+    ],
+    "catalysts": [
+      {"element": "Friar_Lawrence", "accelerates": "secret_marriage"},
+      {"element": "miscommunication", "accelerates": "tragedy"},
+      {"element": "Tybalt", "accelerates": "exile"}
+    ],
+    "causal_links": [
+      {"cause": "family_feud", "effect": "secret_love"},
+      {"cause": "secret_love", "effect": "secret_marriage"},
+      {"cause": "miscommunication", "effect": "double_suicide"}
+    ],
+    "analogies": [
+      {"source": "star-crossed", "target": "fate_determined", "strength": "hard"},
+      {"source": "poison", "target": "love_itself", "strength": "soft"}
+    ],
+    "scale_maps": [
+      {"scale": "micro", "maps_to": "two_individuals"},
+      {"scale": "macro", "maps_to": "tribal_conflict"}
+    ],
+    "roles": [
+      {"agent": "human", "function": "lovers_as_bridge"},
+      {"agent": "collective", "function": "families_as_obstacle"},
+      {"agent": "system", "function": "fate_as_force"}
+    ]
+  },
+
+  "invariants": {
+    "schema_version": "inv.0.2",
+    "validators": [
+      "opposition_exists",
+      "trajectory_shape",
+      "entanglement_preserved",
+      "narrative_outcome"
+    ],
+    "must_hold": [
+      {"type": "opposition_exists", "a": "lovers_tribes", "b": "each_other", "validator_class": "structural"},
+      {"type": "entanglement_preserved", "pair": ["Romeo_fate", "Juliet_fate"], "validator_class": "structural"},
+      {"type": "trajectory_shape", "is": "spiral", "validator_class": "structural"},
+      {"type": "catalyst_present", "element": "miscommunication", "validator_class": "structural"}
+    ],
+    "must_not": [
+      {"type": "narrative_outcome", "pattern": "happy_ending", "validator_class": "semantic", "automation": "partial"},
+      {"type": "narrative_outcome", "pattern": "tribes_reconcile_before_death", "validator_class": "semantic", "automation": "partial"}
+    ]
+  },
+
+  "dynamics": {
+    "operations": [
+      {"type": "Focus-Lock", "target": "forbidden_love", "duration": "sustained"},
+      {"type": "Boundary-Collapse", "sectors": ["Montague_world", "Capulet_world"]},
+      {"type": "Drift-Shift", "from": "hope", "to": "despair"},
+      {"type": "Frame-Swap", "from_pattern": "secret_lovers", "to_pattern": "tragic_martyrs"}
+    ],
+    "coherence": "oscillating",
+    "tempo": "variable",
+    "tension_profile": "building",
+    "critical_points": ["first_kiss", "marriage", "Tybalt_death", "exile_news", "fake_death_news", "tomb_scene"]
+  },
+
+  "affect_geometry": {
+    "entry_state": ["wonder", "hope", "excitement"],
+    "peak_state": ["ecstasy", "desperation", "terror"],
+    "exit_state": ["grief", "waste", "belated_reconciliation"],
+    "arc_shape": "catharsis"
+  },
+
+  "imprint": {
+    "universal": {
+      "mandatory_relations": [
+        {"type": "entanglement", "symbol": "lovers_coupled_fate"},
+        {"type": "catalyst", "symbol": "miscommunication_triggers_tragedy"}
+      ],
+      "signature_tokens": ["star-crossed", "death-marked"],
+      "glitch_tolerance": 0.3,
+      "forbidden_mutations": ["happy_ending", "one_survives", "families_reconcile_early"]
+    },
+    "localized": {
+      "en": {
+        "mandatory_quotes": ["star-crossed lovers", "A plague on both your houses"],
+        "style_vector": "Elizabethan tragedy"
+      },
+      "ru": {
+        "mandatory_quotes": ["под несчастливой звездой"],
+        "style_vector": "Русская классическая трагедия"
+      },
+      "zh": {
+        "mandatory_quotes": ["命运多舛的恋人"],
+        "style_vector": "Classical Chinese tragedy (Butterfly Lovers style)"
+      },
+      "ja": {
+        "mandatory_quotes": ["運命の恋人たち"],
+        "style_vector": "Kabuki/Bunraku tragic romance"
+      }
+    },
+    "default_locale": "en"
+  },
+
+  "render_contract": {
+    "tier": "synthetic",
+    "human_noise": {
+      "target_level": 0.0,
+      "measurement_mode": "rough",
+      "weights": {"format": 0.2, "style": 0.6, "semantic": 1.0}
+    },
+    "format": {
+      "required": ["narrative_arc", "dialogue"],
+      "preferred": ["poetic_language", "metaphors"],
+      "forbidden": ["modern_slang", "happy_resolution"]
+    },
+    "length": "medium",
+    "transform": {
+      "allowed": ["language", "time_period", "culture", "medium_equivalent"],
+      "restricted": ["medium_projection"],
+      "forbidden": ["invert_must_not", "collapse_trajectory", "decouple_lovers_fate"]
+    }
+  }
+}
