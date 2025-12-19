@@ -1,0 +1,213 @@
+{
+  "identity": {
+    "seed_version": "0.6.0",
+    "id": "tragic_entanglement_archetype_001",
+    "parent_seed": null,
+    "class": "generator",
+    "intent": "entangled_dissolution_through_miscommunication",
+    "scope": "public",
+    "epoch": "2025-CE",
+    "cultural_context": "global_western_literary",
+    "core_fields": ["/relations", "/invariants", "/imprint/universal"],
+    "hash": {
+      "algo": "sha256",
+      "canonicalization": "json-c14n-v1",
+      "value": "compute_on_commit"
+    }
+  },
+
+  "trajectory": {
+    "entry": "chance_intersection",
+    "exit": "mutual_dissolution",
+    "waypoints": [
+      "binding_formation",
+      "binding_formalization",
+      "external_disruption",
+      "separation",
+      "miscommunication_event",
+      "cascade_initiation",
+      "dissolution"
+    ],
+    "shape": "spiral",
+    "critical_thresholds": [
+      "binding_formalization",
+      "external_disruption",
+      "miscommunication_event"
+    ],
+    "energy_profile": {
+      "curve": "oscillation",
+      "values": [0.3, 0.7, 0.85, 0.4, 0.6, 0.95, 0.0]
+    }
+  },
+
+  "contour": {
+    "positive_space": [
+      "forbidden_binding",
+      "collective_opposition",
+      "youth_pattern",
+      "fate_topology",
+      "communication_failure"
+    ],
+    "negative_space": [
+      "economic_motives",
+      "political_strategy",
+      "extended_temporal_development",
+      "successful_mediation"
+    ],
+    "depth": 0.85,
+    "register": ["poetic", "tragic", "elevated"]
+  },
+
+  "relations": {
+    "types": [
+      {
+        "id": "tragic_entanglement",
+        "properties": ["non-causal", "bidirectional", "irreversible", "high-coupling"],
+        "coupling_default": 0.95
+      },
+      {
+        "id": "tribal_opposition",
+        "properties": ["bidirectional", "inherited", "self-reinforcing"],
+        "coupling_default": 0.8
+      },
+      {
+        "id": "catalytic_intervention",
+        "properties": ["unidirectional", "accelerating", "unintended-consequence"],
+        "coupling_default": 0.6
+      }
+    ],
+    "instances": [
+      {"type": "tragic_entanglement", "nodes": ["agent_A", "agent_B"], "coupling": 0.98},
+      {"type": "tribal_opposition", "nodes": ["collective_A", "collective_B"], "coupling": 0.85},
+      {"type": "catalytic_intervention", "nodes": ["mediator", "binding_formation"], "coupling": 0.7},
+      {"type": "catalytic_intervention", "nodes": ["communication_failure", "dissolution"], "coupling": 0.95}
+    ],
+    "gradients": [
+      {"from": "hidden_binding", "to": "public_knowledge", "direction": 1, "strength": 0.7},
+      {"from": "hope_state", "to": "despair_state", "direction": 1, "strength": 0.9},
+      {"from": "life_pattern", "to": "dissolution_pattern", "direction": 1, "strength": 1.0}
+    ],
+    "hierarchies": [
+      {"above": "collective_honor", "below": "individual_preference", "strength": 0.9},
+      {"above": "fate_pattern", "below": "agent_choice", "strength": 0.85}
+    ],
+    "entanglements": [
+      {"nodes": ["agent_A_state", "agent_B_state"], "coupling": 0.98, "causation": false},
+      {"nodes": ["tribal_conflict", "dissolution_outcome"], "coupling": 0.9, "causation": false}
+    ],
+    "catalysts": [
+      {"element": "mediator_figure", "accelerates": "binding_formalization", "strength": 0.8},
+      {"element": "communication_failure", "accelerates": "dissolution", "strength": 0.95},
+      {"element": "external_aggressor", "accelerates": "separation", "strength": 0.85}
+    ],
+    "scale_isomorphisms": [
+      {"micro": "two_agents", "macro": "two_collectives", "mapping": "identical"},
+      {"micro": "individual_dissolution", "macro": "conflict_resolution", "mapping": "inverted"}
+    ]
+  },
+
+  "invariants": {
+    "schema_version": "inv.0.3",
+    "must_hold": [
+      {"type": "entanglement_exists", "nodes": ["agent_A_state", "agent_B_state"], "class": "structural"},
+      {"type": "entanglement_property", "property": "causation", "value": false, "class": "structural"},
+      {"type": "gradient_preserved", "from": "life_pattern", "to": "dissolution_pattern", "class": "structural"},
+      {"type": "catalyst_present", "element": "communication_failure", "class": "structural"},
+      {"type": "hierarchy_maintained", "above": "collective_honor", "below": "individual_preference", "class": "structural"},
+      {"type": "trajectory_shape", "shape": "spiral", "class": "structural"}
+    ],
+    "must_not": [
+      {"type": "outcome_pattern", "pattern": "both_agents_survive", "class": "semantic"},
+      {"type": "outcome_pattern", "pattern": "collectives_reconcile_before_dissolution", "class": "semantic"},
+      {"type": "outcome_pattern", "pattern": "communication_succeeds", "class": "semantic"},
+      {"type": "entanglement_broken", "nodes": ["agent_A_state", "agent_B_state"], "class": "structural"}
+    ]
+  },
+
+  "dynamics": {
+    "operations": [
+      {"occurs": "binding", "locus": ["agent_A", "agent_B"], "strength": 0.98},
+      {"occurs": "threshold_crossing", "from": "hidden_state", "to": "formalized_state"},
+      {"occurs": "cascade", "trigger": "external_disruption", "targets": ["separation", "despair"]},
+      {"occurs": "interference", "patterns": ["hope_signal", "reality_signal"], "result": "destructive"},
+      {"occurs": "dissolution", "target": "agent_A", "trigger": "miscommunication"},
+      {"occurs": "dissolution", "target": "agent_B", "trigger": "entanglement_response"},
+      {"occurs": "stabilization", "pattern": "collective_reconciliation", "post_dissolution": true}
+    ],
+    "coherence": 0.75,
+    "tempo": {
+      "base": 0.6,
+      "variance": 0.4
+    },
+    "tension": {
+      "profile": [0.3, 0.5, 0.8, 0.4, 0.65, 0.95, 0.2],
+      "critical_indices": [2, 5]
+    }
+  },
+
+  "affect_geometry": {
+    "entry": {"valence": 0.7, "arousal": 0.5},
+    "peak": {"valence": -0.8, "arousal": 0.98},
+    "exit": {"valence": -0.3, "arousal": 0.15},
+    "arc": "catharsis"
+  },
+
+  "imprint": {
+    "universal": {
+      "invariant_relations": [
+        {"type": "tragic_entanglement", "required": true},
+        {"type": "catalytic_intervention", "element": "communication_failure", "required": true}
+      ],
+      "signature_tokens": ["⇄", "∇", "∅"],
+      "glitch_tolerance": 0.25,
+      "forbidden_mutations": [
+        "break_entanglement",
+        "successful_communication",
+        "single_dissolution",
+        "happy_resolution"
+      ]
+    },
+    "localized": {
+      "default": "en",
+      "variants": {
+        "en": {
+          "anchors": ["star-crossed", "death-marked love"],
+          "style": "elizabethan_tragedy",
+          "render_as": ["Romeo", "Juliet", "Montague", "Capulet", "Friar Lawrence", "Tybalt"]
+        },
+        "zh": {
+          "anchors": ["命运多舛", "生死相依"],
+          "style": "classical_chinese_tragedy",
+          "render_as": ["梁山伯", "祝英台", "梁家", "祝家", "师父", "马文才"]
+        },
+        "ja": {
+          "anchors": ["運命の恋人", "心中"],
+          "style": "bunraku_shinju",
+          "render_as": ["徳兵衛", "お初", "平野屋", "天満屋", "九平次"]
+        },
+        "cyber_2087": {
+          "anchors": ["quantum-linked", "system-terminated"],
+          "style": "cyberpunk_noir",
+          "render_as": ["R-0M30", "JUL-137", "Yakuza_Clan_A", "Yakuza_Clan_B", "AI_Mediator", "Enforcer_Unit"]
+        }
+      }
+    }
+  },
+
+  "render_contract": {
+    "tier": "synthetic",
+    "human_noise": {
+      "target": 0.0,
+      "mode": "rough"
+    },
+    "format": {
+      "required": ["narrative_arc", "dialogue_present", "dissolution_depicted"],
+      "preferred": ["poetic_register", "metaphor_use", "foreshadowing"],
+      "forbidden": ["resolution_before_dissolution", "broken_entanglement", "successful_intervention"]
+    },
+    "transform": {
+      "allowed": ["language", "epoch", "cultural_context", "medium_equivalent", "scale"],
+      "forbidden": ["invert_invariants", "break_entanglement", "prevent_dissolution"]
+    }
+  }
+}
