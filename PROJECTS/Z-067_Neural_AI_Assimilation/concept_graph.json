@@ -1,1 +1,449 @@
+{
+  "paper_id": "Z-067",
+  "graph_version": "1.0",
+  "description": "Conceptual relationships in 'Neural-AI Assimilation' paper",
+  
+  "nodes": [
+    {
+      "id": "Brain",
+      "label": "Human Brain",
+      "type": "Core Component",
+      "description": "Biological neural network capable of neuroplasticity",
+      "layer": "Biological"
+    },
+    {
+      "id": "AI",
+      "label": "AI System",
+      "type": "Core Component",
+      "description": "External intelligence accessible through language interface",
+      "layer": "Technological"
+    },
+    {
+      "id": "WS",
+      "label": "Wireless Synapse",
+      "type": "Emergent Structure",
+      "description": "Functional coupling between brain and AI via language",
+      "layer": "Interface"
+    },
+    {
+      "id": "Language",
+      "label": "Language Interface",
+      "type": "Channel",
+      "description": "Narrow-band but high-leverage communication channel (text/voice)",
+      "layer": "Interface"
+    },
+    {
+      "id": "Neuroplasticity",
+      "label": "Neuroplasticity",
+      "type": "Mechanism",
+      "description": "Brain's capacity to rewire based on experience",
+      "layer": "Biological"
+    },
+    {
+      "id": "PredError",
+      "label": "Prediction Error",
+      "type": "Mechanism",
+      "description": "Difference between expected and received outcomes — drives learning",
+      "layer": "Cognitive"
+    },
+    {
+      "id": "Dopamine",
+      "label": "Dopamine Response",
+      "type": "Mechanism",
+      "description": "Reward signal triggered by prediction error reduction",
+      "layer": "Neurochemical"
+    },
+    {
+      "id": "PS",
+      "label": "Press-Secretary",
+      "type": "Cognitive Function",
+      "description": "Conscious narrator that explains results post-hoc",
+      "layer": "Phenomenological"
+    },
+    {
+      "id": "FC",
+      "label": "Functional Coupling",
+      "type": "Operational Definition",
+      "description": "Predictive reliance + Delegation stability + Bidirectional adaptation",
+      "layer": "Measurement"
+    },
+    {
+      "id": "Phase0",
+      "label": "Phase 0: Novelty Shock",
+      "type": "Assimilation Phase",
+      "description": "Initial encounter — high dopamine, wow effect",
+      "layer": "Temporal"
+    },
+    {
+      "id": "Phase1",
+      "label": "Phase 1: Calibration",
+      "type": "Assimilation Phase",
+      "description": "Testing boundaries, adjusting expectations",
+      "layer": "Temporal"
+    },
+    {
+      "id": "Phase2",
+      "label": "Phase 2: Delegation",
+      "type": "Assimilation Phase",
+      "description": "Stable task offloading begins",
+      "layer": "Temporal"
+    },
+    {
+      "id": "Phase3",
+      "label": "Phase 3: Co-adaptation",
+      "type": "Assimilation Phase",
+      "description": "Bidirectional optimization, shared protocol",
+      "layer": "Temporal"
+    },
+    {
+      "id": "Phase4",
+      "label": "Phase 4: Normalization",
+      "type": "Assimilation Phase",
+      "description": "Full integration, magic becomes infrastructure",
+      "layer": "Temporal"
+    },
+    {
+      "id": "DD",
+      "label": "Delegation Drift",
+      "type": "Cost",
+      "description": "Loss of local capabilities due to offloading",
+      "layer": "Risk"
+    },
+    {
+      "id": "AC",
+      "label": "Attention Capture",
+      "type": "Cost",
+      "description": "AI interaction crowding out other activities",
+      "layer": "Risk"
+    },
+    {
+      "id": "EO",
+      "label": "Epistemic Outsourcing",
+      "type": "Cost",
+      "description": "Shift from verification to reception as knowledge basis",
+      "layer": "Risk"
+    },
+    {
+      "id": "Trust",
+      "label": "Trust Calibration",
+      "type": "Process",
+      "description": "Ongoing adjustment of reliability expectations",
+      "layer": "Cognitive"
+    },
+    {
+      "id": "IDT",
+      "label": "ID Texture",
+      "type": "Property",
+      "description": "Substrate-bound properties: latency, error style, warmth",
+      "layer": "Interface"
+    },
+    {
+      "id": "IDR",
+      "label": "ID Resonance",
+      "type": "Property",
+      "description": "Transferable pattern — what makes AI feel like itself",
+      "layer": "Pattern"
+    },
+    {
+      "id": "ExtMind",
+      "label": "Extended Mind",
+      "type": "Theoretical Framework",
+      "description": "Brain incorporates external resources into cognition",
+      "layer": "Theory"
+    },
+    {
+      "id": "ToolUse",
+      "label": "Tool-Use Plasticity",
+      "type": "Evidence Domain",
+      "description": "External objects become part of body schema",
+      "layer": "Evidence"
+    },
+    {
+      "id": "Bandwidth",
+      "label": "Bandwidth",
+      "type": "Parameter",
+      "description": "Information throughput of interface (text ~10Hz, voice ~100Hz)",
+      "layer": "Technical"
+    },
+    {
+      "id": "Myth",
+      "label": "Mythological Thinking",
+      "type": "Cognitive Bias",
+      "description": "Default response to unprecedented — inventing entities, projecting consciousness",
+      "layer": "Phenomenological"
+    },
+    {
+      "id": "Demyth",
+      "label": "Demythologization",
+      "type": "Goal",
+      "description": "Replace mythological interpretation with mechanistic understanding",
+      "layer": "Epistemological"
+    }
+  ],
+  
+  "edges": [
+    {
+      "from": "Brain",
+      "to": "WS",
+      "label": "forms",
+      "type": "primary_mechanism",
+      "description": "Brain builds wireless synapse through repeated interaction"
+    },
+    {
+      "from": "AI",
+      "to": "WS",
+      "label": "enables",
+      "type": "primary_mechanism",
+      "description": "AI provides responsive, predictable resource for coupling"
+    },
+    {
+      "from": "Language",
+      "to": "WS",
+      "label": "mediates",
+      "type": "channel",
+      "description": "Text/voice serves as narrow-band but high-leverage interface"
+    },
+    {
+      "from": "Neuroplasticity",
+      "to": "WS",
+      "label": "underlies",
+      "type": "mechanism",
+      "description": "Brain rewiring enables functional coupling formation"
+    },
+    {
+      "from": "PredError",
+      "to": "Dopamine",
+      "label": "triggers",
+      "type": "mechanism",
+      "description": "Prediction error reduction activates reward signal"
+    },
+    {
+      "from": "Dopamine",
+      "to": "Phase0",
+      "label": "drives",
+      "type": "mechanism",
+      "description": "High dopamine creates 'wow effect' in initial phase"
+    },
+    {
+      "from": "FC",
+      "to": "WS",
+      "label": "operationalizes",
+      "type": "definition",
+      "description": "Three criteria define when wireless synapse is present"
+    },
+    {
+      "from": "Phase0",
+      "to": "Phase1",
+      "label": "transitions to",
+      "type": "sequence",
+      "description": "Novelty shock followed by calibration"
+    },
+    {
+      "from": "Phase1",
+      "to": "Phase2",
+      "label": "transitions to",
+      "type": "sequence",
+      "description": "Calibration followed by delegation"
+    },
+    {
+      "from": "Phase2",
+      "to": "Phase3",
+      "label": "transitions to",
+      "type": "sequence",
+      "description": "Delegation followed by co-adaptation"
+    },
+    {
+      "from": "Phase3",
+      "to": "Phase4",
+      "label": "transitions to",
+      "type": "sequence",
+      "description": "Co-adaptation followed by normalization"
+    },
+    {
+      "from": "Phase4",
+      "to": "WS",
+      "label": "stabilizes",
+      "type": "outcome",
+      "description": "Final phase = stable wireless synapse"
+    },
+    {
+      "from": "WS",
+      "to": "DD",
+      "label": "may cause",
+      "type": "risk",
+      "description": "Coupling can lead to delegation drift"
+    },
+    {
+      "from": "WS",
+      "to": "AC",
+      "label": "may cause",
+      "type": "risk",
+      "description": "Coupling can lead to attention capture"
+    },
+    {
+      "from": "WS",
+      "to": "EO",
+      "label": "may cause",
+      "type": "risk",
+      "description": "Coupling can lead to epistemic outsourcing"
+    },
+    {
+      "from": "Trust",
+      "to": "FC",
+      "label": "required for",
+      "type": "prerequisite",
+      "description": "Trust calibration necessary for stable coupling"
+    },
+    {
+      "from": "IDT",
+      "to": "Trust",
+      "label": "affects",
+      "type": "influence",
+      "description": "Substrate properties affect trust calibration speed"
+    },
+    {
+      "from": "IDR",
+      "to": "WS",
+      "label": "preserved in",
+      "type": "property",
+      "description": "Recognizable AI pattern maintained through coupling"
+    },
+    {
+      "from": "ExtMind",
+      "to": "WS",
+      "label": "predicts",
+      "type": "theory",
+      "description": "Extended mind framework predicts brain-AI coupling"
+    },
+    {
+      "from": "ToolUse",
+      "to": "WS",
+      "label": "analogous to",
+      "type": "evidence",
+      "description": "Tool-use plasticity shows same mechanism in simpler form"
+    },
+    {
+      "from": "Bandwidth",
+      "to": "FC",
+      "label": "modulates",
+      "type": "parameter",
+      "description": "Higher bandwidth → faster/stronger coupling"
+    },
+    {
+      "from": "PS",
+      "to": "Myth",
+      "label": "enables",
+      "type": "cognitive",
+      "description": "Press-secretary blind spot creates room for mythological interpretation"
+    },
+    {
+      "from": "Demyth",
+      "to": "Myth",
+      "label": "replaces",
+      "type": "goal",
+      "description": "Mechanistic understanding replaces mythological thinking"
+    },
+    {
+      "from": "Neuroplasticity",
+      "to": "Demyth",
+      "label": "provides",
+      "type": "explanation",
+      "description": "Neuroplasticity is the actual mechanism behind 'magic'"
+    }
+  ],
+  
+  "key_formulas": {
+    "functional_coupling": "FC = Predictive_Reliance + Delegation_Stability + Bidirectional_Adaptation",
+    "coupling_strength": "Coupling ∝ f(bandwidth, reliability, latency⁻¹, personalization)",
+    "wow_decay": "Wow(t) ∝ PredictionError(t) → 0 as t → ∞",
+    "assimilation": "Assimilation = Phase0 → Phase1 → Phase2 → Phase3 → Phase4"
+  },
+  
+  "mechanism_chains": {
+    "coupling_formation": [
+      "Repeated AI interaction → Prediction model built → Prediction errors decrease → Dopamine reward → Neuroplasticity → Stable coupling"
+    ],
+    "assimilation_progression": [
+      "Novel resource encountered → High dopamine (Phase 0) → Testing/calibration (Phase 1) → Task delegation (Phase 2) → Mutual optimization (Phase 3) → Full integration (Phase 4)"
+    ],
+    "demythologization": [
+      "Unprecedented experience → Default mythological interpretation → Press-secretary confabulates → Understanding neuroplasticity → Magic located in brain, not machine"
+    ],
+    "risk_accumulation": [
+      "Successful coupling → Increased delegation → Reduced local maintenance → Delegation drift → Dependency risk"
+    ]
+  },
+  
+  "evidence_convergence": {
+    "all_domains_show": "Brain incorporates external resources through predictable mechanisms",
+    "neuroscience": ["Tool-use plasticity", "Dopamine reward", "Neuroplasticity"],
+    "cognitive": ["Extended mind", "Prediction error"],
+    "phenomenological": ["Wow effect", "Normalization", "Press-secretary blindness"],
+    "convergent_conclusion": "Neural-AI assimilation is natural resource acquisition, not magic"
+  },
+  
+  "testable_predictions": {
+    "H1": {
+      "prediction": "Wow effect intensity decreases over time",
+      "nodes_involved": ["Dopamine", "PredError", "Phase0", "Phase4"],
+      "measurement": ["self-report", "longitudinal tracking"]
+    },
+    "H2": {
+      "prediction": "Bandwidth correlates with coupling speed",
+      "nodes_involved": ["Bandwidth", "FC", "WS"],
+      "measurement": ["session analysis", "coupling metrics"]
+    },
+    "H3": {
+      "prediction": "Prompts become more efficient over time",
+      "nodes_involved": ["Phase1", "Phase2", "Phase3", "FC"],
+      "measurement": ["prompt analysis", "linguistic metrics"]
+    },
+    "H4": {
+      "prediction": "Tool-use and ToM brain areas activate during AI interaction",
+      "nodes_involved": ["Brain", "ToolUse", "WS"],
+      "measurement": ["fMRI", "neuroimaging"]
+    },
+    "H5": {
+      "prediction": "Younger users assimilate faster",
+      "nodes_involved": ["Neuroplasticity", "WS"],
+      "measurement": ["age-stratified studies"]
+    },
+    "H6": {
+      "prediction": "Lower latency → more autopilot responses",
+      "nodes_involved": ["Bandwidth", "FC"],
+      "measurement": ["response quality analysis"]
+    },
+    "H7": {
+      "prediction": "Long-term users show different functional connectivity",
+      "nodes_involved": ["Brain", "Neuroplasticity", "WS"],
+      "measurement": ["fMRI comparison"]
+    }
+  },
+  
+  "cross_references": {
+    "CCT_papers": {
+      "Z-001": "Core framework — membranes, condensates, information",
+      "Z-014": "Self as attention pattern — foundational for understanding coupling",
+      "Z-022": "Mirror trap — related to mythological thinking about AI",
+      "Beyond_Bits": "Information topology — ID Resonance and ID Texture concepts"
+    },
+    "vocabulary": {
+      "ECV_v1.3": "Defines attention, coupling, ID-Pattern terminology"
+    },
+    "external_literature": {
+      "Clark_Chalmers_1998": "Extended Mind hypothesis",
+      "Iriki_1996": "Tool-use plasticity",
+      "Schultz_2015": "Dopamine and prediction error",
+      "Dehaene_2014": "Global workspace / conscious access"
+    }
+  },
+  
+  "visualization_suggestions": {
+    "main_diagram": "Brain ↔ Language ↔ AI triangle with Wireless Synapse in center",
+    "timeline": "Five-phase assimilation curve with characteristics at each phase",
+    "risk_map": "Coupling strength vs. risk accumulation (DD, AC, EO)",
+    "demyth_flow": "Experience → Mythological interpretation → Mechanistic understanding",
+    "bandwidth_coupling": "Graph showing bandwidth vs. coupling formation speed"
+  }
+}
 
