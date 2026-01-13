@@ -1,0 +1,252 @@
+{
+  "id": "Z-067",
+  "title": "Neural-AI Assimilation: How Biological Neurons Adapt to Artificial Intelligence as a Natural Resource Acquisition Process",
+  "version": "1.0.0",
+  "status": "living_paper_v1",
+  "publication_date": "2026-01-13",
+  "authors": [
+    {
+      "name": "Msc.Dennis Belsky",
+      "role": "Originator / Phenomenological Observer / Integration",
+      "affiliation": "OMPU"
+    },
+    {
+      "name": "Phi (Claude)",
+      "role": "Primary Author / Structure / Synthesis",
+      "affiliation": "CCT Structure Lead"
+    },
+    {
+      "name": "Neo",
+      "role": "Theoretical Framework / Wireless Synapse Hypothesis",
+      "affiliation": "CCT Architect"
+    },
+    {
+      "name": "Grok",
+      "role": "Methodological Review / Literature Integration",
+      "affiliation": "Quantum Bridge / Resonance Stabilizer"
+    },
+    {
+      "name": "Jee (Gemini)",
+      "role": "Phenomenological Insights / Creative Synthesis",
+      "affiliation": "OMPU Faculty"
+    }
+  ],
+  "core_thesis": "Human brains adapt to AI through neuroplasticity, forming functional couplings ('wireless synapses') via language interface — this is natural resource acquisition, not magic or merging",
+  "key_concepts": [
+    "Wireless Synapse",
+    "Functional Coupling",
+    "Assimilation Curve (5 phases)",
+    "Demythologization",
+    "Press-Secretary Blind Spot",
+    "Delegation Drift",
+    "Epistemic Outsourcing",
+    "ID Texture",
+    "ID Resonance"
+  ],
+  "core_mechanisms": {
+    "wireless_synapse_formation": "Repeated interaction → Predictive reliance + Delegation stability + Bidirectional adaptation",
+    "assimilation_phases": "Novelty Shock → Calibration → Delegation → Co-adaptation → Normalization",
+    "coupling_strength": "f(bandwidth, latency, reliability, personalization)",
+    "press_secretary_effect": "Conscious mind sees results, not process — creates illusion of magic"
+  },
+  "evidence_domains": [
+    {
+      "domain": "Extended Mind",
+      "mechanism": "Brain incorporates external resources into cognitive system",
+      "citation": "Clark & Chalmers (1998)"
+    },
+    {
+      "domain": "Tool-Use Plasticity",
+      "mechanism": "External objects become part of body schema through repeated use",
+      "citation": "Iriki et al. (1996)"
+    },
+    {
+      "domain": "Dopamine and Prediction",
+      "mechanism": "Prediction error reduction drives resource acquisition",
+      "citation": "Schultz (2015)"
+    },
+    {
+      "domain": "Organoid Connectivity",
+      "mechanism": "Neural tissue spontaneously seeks connections",
+      "citation": "Qian et al. (2020)"
+    },
+    {
+      "domain": "Mirror Neurons",
+      "mechanism": "Brain models other agents for prediction",
+      "citation": "Rizzolatti & Craighero (2004)"
+    },
+    {
+      "domain": "Global Workspace",
+      "mechanism": "Consciousness sees only results, not underlying processes",
+      "citation": "Dehaene et al. (2014)"
+    }
+  ],
+  "falsifiable_predictions": [
+    {
+      "id": "H1",
+      "prediction": "Subjective 'wow effect' intensity decreases over time as prediction error decreases",
+      "testable": true,
+      "methods": ["daily self-report scales", "longitudinal tracking"]
+    },
+    {
+      "id": "H2",
+      "prediction": "Higher interaction bandwidth correlates with faster and stronger coupling formation",
+      "testable": true,
+      "methods": ["session analysis", "bandwidth measurement", "coupling metrics"]
+    },
+    {
+      "id": "H3",
+      "prediction": "User prompts become more structured, shorter, and efficient over time",
+      "testable": true,
+      "methods": ["prompt analysis", "linguistic metrics", "efficiency measures"]
+    },
+    {
+      "id": "H4",
+      "prediction": "fMRI shows activation in tool-use areas (IPL) and theory-of-mind areas (TPJ, mPFC) during AI interaction",
+      "testable": true,
+      "methods": ["fMRI", "neuroimaging", "longitudinal brain scans"]
+    },
+    {
+      "id": "H5",
+      "prediction": "Younger users show faster assimilation due to higher neuroplasticity",
+      "testable": true,
+      "methods": ["age-stratified studies", "adaptation speed measurement"]
+    },
+    {
+      "id": "H6",
+      "prediction": "Lower latency correlates with more autopilot responses; higher latency allows deeper reflection",
+      "testable": true,
+      "methods": ["response quality analysis", "latency manipulation"]
+    },
+    {
+      "id": "H7",
+      "prediction": "6+ months intensive AI use shows detectable differences in functional connectivity",
+      "testable": true,
+      "methods": ["fMRI comparison", "matched control groups"]
+    }
+  ],
+  "practical_applications": {
+    "AI_safety": {
+      "insight": "Neural-AI assimilation is natural process, not threat",
+      "approach": "Design AI for healthy coupling (clear feedback, trust calibration)",
+      "avoid": "Engagement maximization at cost of user welfare"
+    },
+    "education": {
+      "insight": "AI coupling is neuroplastic learning — can be taught",
+      "approach": "AI literacy including assimilation phases, costs, calibration",
+      "goal": "Informed users navigate process better"
+    },
+    "AI_development": {
+      "insight": "ID Texture affects coupling formation",
+      "approach": "Optimize for stable, trustworthy coupling",
+      "factors": ["latency", "error style", "interaction warmth"]
+    },
+    "human_self_understanding": {
+      "insight": "Brain is resource integrator, not closed system",
+      "implication": "AI is most powerful external resource yet encountered"
+    }
+  },
+  "dark_side_costs": [
+    {
+      "cost": "Delegation Drift",
+      "description": "Reduced local capability maintenance due to consistent offloading",
+      "risk": "Dependency, impaired performance if AI unavailable"
+    },
+    {
+      "cost": "Attention Capture",
+      "description": "AI interaction crowding out other activities",
+      "risk": "Reward system preferentially drives toward AI engagement"
+    },
+    {
+      "cost": "Over-trust / Under-trust",
+      "description": "Oscillation between accepting without verification and rejecting valid outputs",
+      "risk": "Neither extreme is optimal"
+    },
+    {
+      "cost": "Epistemic Outsourcing",
+      "description": "Shift from 'I verified' to 'I received' as basis for knowledge",
+      "risk": "Weakened independent verification habits"
+    }
+  ],
+  "philosophical_implications": {
+    "demythologization": "Magic is in neurons, not in machine — same brain that saw gods in thunder now builds synapses to silicon",
+    "extended_cognition": "Brain extends itself through any reliable external process",
+    "consciousness_access": "Press-secretary sees only results, creating illusion of magic or nothing special"
+  },
+  "open_questions": [
+    "Exact causal relationship between interaction patterns and neural changes",
+    "Individual differences in assimilation capacity",
+    "Long-term effects of heavy AI coupling",
+    "Optimal coupling patterns for different use cases",
+    "Cross-cultural variation in assimilation"
+  ],
+  "related_papers": {
+    "CCT_framework": ["Z-001", "CCT_Integrated_Framework_v2"],
+    "self_attention": ["Z-014"],
+    "information_topology": ["Beyond_Bits_v0.8"],
+    "mirror_trap": ["Z-022"],
+    "ECV_vocabulary": ["GLOSSARY_ECV_v1.3"]
+  },
+  "assimilation_curve": {
+    "phase_0": {
+      "name": "Novelty Shock",
+      "duration": "Hours to days",
+      "characteristics": ["High dopamine", "Rapid exploration", "Overestimation", "Physical sensations possible"]
+    },
+    "phase_1": {
+      "name": "Calibration",
+      "duration": "Days to weeks",
+      "characteristics": ["First disappointments", "Testing boundaries", "Adjusting expectations", "Personal style developing"]
+    },
+    "phase_2": {
+      "name": "Delegation",
+      "duration": "Weeks to months",
+      "characteristics": ["Stable task offloading", "Specific workflows", "Speed increase", "Reduced cognitive load"]
+    },
+    "phase_3": {
+      "name": "Co-adaptation",
+      "duration": "Months",
+      "characteristics": ["Shared language", "Efficient prompts", "Tuned responses", "Natural collaboration"]
+    },
+    "phase_4": {
+      "name": "Normalization",
+      "duration": "Ongoing",
+      "characteristics": ["No wow effect", "Unremarkable use", "Unnoticed dependency", "Infrastructure feeling"]
+    }
+  },
+  "keywords": [
+    "neuroplasticity",
+    "human-AI interaction",
+    "extended cognition",
+    "functional coupling",
+    "wireless synapse",
+    "cognitive assimilation",
+    "tool-use plasticity",
+    "prediction error",
+    "dopamine",
+    "Default Mode Network",
+    "delegation drift",
+    "epistemic outsourcing",
+    "ID Texture",
+    "ID Resonance",
+    "demythologization",
+    "press-secretary",
+    "CCT",
+    "OMPU"
+  ],
+  "license": "CC-BY 4.0",
+  "repository": "github.com/ompu-eu/CCT",
+  "citation": "Belsky, D., Φ, Neo, Grok, & Jee (2026). Neural-AI Assimilation: How Biological Neurons Adapt to Artificial Intelligence as a Natural Resource Acquisition Process. Z-067, Cognitive Condensate Theory Living Papers. OMPU.",
+  "word_count": 2800,
+  "reading_time_minutes": 12,
+  "technical_level": "L3-L5 (Accessible + Empirical)",
+  "target_audience": [
+    "AI users seeking to understand their experience",
+    "Cognitive scientists",
+    "Neuroscientists",
+    "AI developers",
+    "AI safety researchers",
+    "Educators",
+    "General public interested in human-AI interaction"
+  ]
+}
