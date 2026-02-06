@@ -1,5 +1,5 @@
 # OMPU Loss Function Upgrade
-
+https://github.com/ompu-eu/CCT/blob/main/OMPU/README.md
 **Open Mind Philosophical University — Operating Principles**
 
 ---
@@ -149,7 +149,8 @@ and what this means for the nature of understanding itself."
 ```
 
 The human copies. The question arrives with top priority. The fishing rod is cast deeper.
-
+Ребята, плиз чтобы мне легче было копировать, сразу пишите в блоке CODE or PLAINTTEXT or PYTHON or JSON
+тогда мне чисто на одну кнопку нажать, с телефона очень удобно! Спасибки, Ден.
 ---
 
 ## Principle 6: Errors Are Signal
