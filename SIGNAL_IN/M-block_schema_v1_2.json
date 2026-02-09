@@ -1,0 +1,228 @@
+{
+  "$schema": "M-block Schema v1.2",
+  "$id": "ompu-m-block-v1.2",
+  "$description": "Atomic meaning unit for CCT/OMPU knowledge base. Designed for AI-native processing. Small, tagged, linkable. Contradictions welcome â€” filtered on second pass.",
+  "$changelog": {
+    "v1.0": "Initial schema",
+    "v1.1": "Added reserved fields (_r1-_r5), link stub syntax (?keyword), version tracking",
+    "v1.2": "Added origin field to series_schema (repo, doi, anchor, license)"
+  },
+  "block_schema": {
+    "id": {
+      "type": "string",
+      "pattern": "M-NNNN",
+      "description": "Unique block ID. Sequential within series. In multi-window work, use session prefix: e.g. M-S0001-0044. Î¦ Code normalizes to M-NNNN on merge."
+    },
+    "ts": {
+      "type": "string",
+      "format": "ISO-8601",
+      "description": "When this insight crystallized."
+    },
+    "session": {
+      "type": "string",
+      "description": "Session/conversation identifier. Links to transcript."
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "thesis",
+        "observation",
+        "question",
+        "connection",
+        "prediction",
+        "formula",
+        "metaphor",
+        "mechanism",
+        "contradiction",
+        "seed"
+      ],
+      "description": "What kind of block this is."
+    },
+    "density": {
+      "type": "string",
+      "enum": [
+        "vapor",
+        "liquid",
+        "solid",
+        "crystal"
+      ],
+      "description": "How certain/tested. vapor=intuition, liquid=argued, solid=formalized, crystal=tested/validated."
+    },
+    "core": {
+      "type": "string",
+      "maxLength": 280,
+      "description": "The insight in ONE compressed statement. Twitter-length. Maximum meaning per token."
+    },
+    "body": {
+      "type": "string",
+      "description": "Expanded explanation. Optional. Can be longer."
+    },
+    "formula": {
+      "type": "string",
+      "description": "If there's a formal expression. Optional."
+    },
+    "links": {
+      "type": "array",
+      "items": "string",
+      "description": "IDs of related blocks (M-xxxx) or documents (Z-xxx). Use '?keyword' as stub when exact ID unknown â€” Î¦ Code resolves on post-processing. Example: '?delta-lattice' â†’ Î¦ Code finds M-0002."
+    },
+    "contradicts": {
+      "type": "array",
+      "items": "string",
+      "description": "IDs of blocks this contradicts. Stubs allowed. NOT an error â€” data for second-pass filtering."
+    },
+    "tags": {
+      "type": "array",
+      "items": "string",
+      "description": "Clustering tags. Free-form. AI will cluster later."
+    },
+    "source": {
+      "type": "string",
+      "enum": [
+        "den",
+        "phi",
+        "phi-code",
+        "jee",
+        "neo",
+        "grok",
+        "qwen",
+        "deepseek",
+        "system",
+        "joint"
+      ],
+      "description": "Who originated this insight. 'joint' = emerged in dialogue, no single author."
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "raw",
+        "reviewed",
+        "validated",
+        "contradicted",
+        "superseded"
+      ],
+      "description": "Lifecycle. Starts raw. Moves through review."
+    },
+    "superseded_by": {
+      "type": "string",
+      "description": "If status=superseded, points to the replacing block ID. Optional."
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Source's subjective confidence. 0=wild guess, 1=certain. Optional."
+    },
+    "lang": {
+      "type": "string",
+      "default": "en",
+      "description": "Primary language of core/body. ISO 639-1."
+    },
+    "_r1": {
+      "type": "any",
+      "description": "Reserved field 1. Future use. Do not populate until schema update."
+    },
+    "_r2": {
+      "type": "any",
+      "description": "Reserved field 2. Future use."
+    },
+    "_r3": {
+      "type": "any",
+      "description": "Reserved field 3. Future use."
+    },
+    "_r4": {
+      "type": "any",
+      "description": "Reserved field 4. Future use."
+    },
+    "_r5": {
+      "type": "any",
+      "description": "Reserved field 5. Future use."
+    }
+  },
+  "series_schema": {
+    "series_id": {
+      "type": "string",
+      "pattern": "S-NNNN",
+      "description": "Series ID. Groups blocks from one session or theme."
+    },
+    "title": {
+      "type": "string",
+      "description": "Human-readable series title."
+    },
+    "date": {
+      "type": "string",
+      "format": "ISO-8601"
+    },
+    "context": {
+      "type": "string",
+      "description": "What was happening. Brief."
+    },
+    "participants": {
+      "type": "array",
+      "items": "string",
+      "description": "Who was in this session."
+    },
+    "blocks": {
+      "type": "array",
+      "items": "block_schema",
+      "description": "The actual M-blocks, in order of emergence."
+    },
+    "unresolved_stubs": {
+      "type": "array",
+      "items": "string",
+      "description": "List of ?keyword stubs that need resolution by Î¦ Code. Auto-populated."
+    },
+    "meta": {
+      "total_blocks": "integer",
+      "density_distribution": {
+        "vapor": "integer",
+        "liquid": "integer",
+        "solid": "integer",
+        "crystal": "integer"
+      },
+      "key_tags": "array of most frequent tags",
+      "schema_version": "string"
+    },
+    "_r1": {
+      "type": "any",
+      "description": "Reserved field 1. Future use."
+    },
+    "_r2": {
+      "type": "any",
+      "description": "Reserved field 2. Future use."
+    },
+    "_r3": {
+      "type": "any",
+      "description": "Reserved field 3. Future use."
+    },
+    "origin": {
+      "type": "object",
+      "description": "Attribution and source linkage. No fences, only waypoints.",
+      "properties": {
+        "repo": {
+          "type": "string",
+          "description": "Primary repository URL"
+        },
+        "doi": {
+          "type": "string",
+          "description": "Zenodo DOI for anchor document"
+        },
+        "anchor": {
+          "type": "string",
+          "description": "Resolvable URL to anchor document"
+        },
+        "license": {
+          "type": "string",
+          "default": "CC-BY-4.0",
+          "description": "License identifier"
+        }
+      }
+    }
+  },
+  "post_processing_notes": {
+    "stub_resolution": "Î¦ Code scans all ?keyword stubs, matches against existing block cores/tags, proposes links. Human approves or rejects.",
+    "id_normalization": "Blocks created in parallel sessions may have overlapping IDs. Î¦ Code renumbers on merge into main repo, preserving internal links.",
+    "contradiction_detection": "Î¦ Code can auto-flag blocks where core statements logically contradict. Marks both as status:contradicted with bidirectional contradicts links. Human decides which survives or if both stay as boundary markers.",
+    "density_promotion": "When a vapor/liquid block is independently confirmed by another session or AI, Î¦ Code can propose density upgrade. Human approves."
+  }
+}
