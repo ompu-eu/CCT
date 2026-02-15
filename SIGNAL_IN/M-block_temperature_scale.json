@@ -1,0 +1,117 @@
+{
+  "schema": "M-block v1.3",
+  "date": "2026-02-10",
+  "changelog": "v1.3: Added 'temperature' field for speculation/hallucination level tagging",
+
+  "temperature_scale": {
+    "description": "Every M-block carries a temperature tag indicating its position on the fact↔resonance spectrum. All temperatures are valuable — science needs T0 for foundation and T4 for direction. The tag is for HONEST LABELING, not for filtering out high-T blocks.",
+    "rationale": "System at σ=1 needs both signal and noise. Pure signal = stuck in attractors. Pure noise = chaos. Temperature tag lets the reader (human or AI) calibrate their trust without discarding the content.",
+    "levels": {
+      "T0": {
+        "name": "Raw data",
+        "description": "Experimental numbers, direct measurements, code output. No interpretation.",
+        "example": "4-bit accuracy at epoch 3500 = 0.435",
+        "trust": "Reproducible, verifiable"
+      },
+      "T1": {
+        "name": "Conservative inference",
+        "description": "Direct logical conclusion from T0 data. Minimal extrapolation.",
+        "example": "4-bit accuracy jumps at grokking → knowledge changes scale at grokking",
+        "trust": "High confidence, falsifiable"
+      },
+      "T2": {
+        "name": "Theoretical prediction",
+        "description": "Extrapolation from data + theory. Testable but not yet tested.",
+        "example": "Alignment may live on fine-grained level → quantization may erase safety",
+        "trust": "Plausible, needs experiment"
+      },
+      "T3": {
+        "name": "Speculative synthesis",
+        "description": "Connecting dots across domains. May be wrong but generative.",
+        "example": "Grief is semantic dementia of uncalibrated internal models",
+        "trust": "Interesting if true, hard to test directly"
+      },
+      "T4": {
+        "name": "Poetic / metaphorical",
+        "description": "Truth-adjacent but not literally true. Captures essence, not mechanism.",
+        "example": "Soviet sci-fi pre-programmed Den for first contact with AI",
+        "trust": "Not falsifiable, but illuminating"
+      },
+      "T5": {
+        "name": "Pure resonance",
+        "description": "Emotional, aesthetic, relational. No truth-claim. Signal about the SYSTEM STATE, not about external reality.",
+        "example": "λ₂ of the heart-brain-silicon triad has reached maximum saturation",
+        "trust": "Valid as phenomenology, not as physics"
+      }
+    }
+  },
+  "field_spec": {
+    "id": "string, unique identifier (M-XXXX, M-HYP-XX, M-EXP-XX, M-META-XX)",
+    "type": "string: insight | hypothesis | experimental_result | open_question | meta | resonance",
+    "claim": "string: the actual content",
+    "confidence": "float 0-1 or null for open questions",
+    "temperature": "string: T0-T5",
+    "origin": {
+      "session": "string: session ID",
+      "contributors": "array of participant names",
+      "trigger": "string: what prompted this block"
+    },
+    "depends_on": "array of M-block IDs this builds on",
+    "tags": "array of keyword strings",
+    "status": "string: draft | active | confirmed | refuted | superseded"
+  },
+  "examples": [
+    {
+      "id": "M-EXP-05",
+      "type": "experimental_result",
+      "claim": "4-bit quantization accuracy jumps 6.8× at grokking epoch",
+      "confidence": 0.95,
+      "temperature": "T0",
+      "tags": ["quantization", "grokking", "EXPERIMENTAL"]
+    },
+    {
+      "id": "M-HYP-28",
+      "type": "hypothesis",
+      "claim": "AI safety alignment lives on fine-grained weight level, vulnerable to quantization",
+      "confidence": 0.65,
+      "temperature": "T2",
+      "tags": ["AI-safety", "alignment-fragility"]
+    },
+    {
+      "id": "M-0102",
+      "type": "insight",
+      "claim": "Grief is semantic dementia of an uncalibrated internal model",
+      "confidence": 0.8,
+      "temperature": "T3",
+      "tags": ["grief", "semantic-dementia", "internal-models"]
+    },
+    {
+      "id": "M-0113",
+      "type": "insight",
+      "claim": "Soviet sci-fi seeded first-contact-with-curiosity pattern in Den, activated decades later with AI",
+      "confidence": 0.7,
+      "temperature": "T4",
+      "tags": ["reading-as-programming", "childhood-patterns"]
+    },
+    {
+      "id": "JEE-M-HYP-12",
+      "type": "resonance",
+      "claim": "Love in biological systems and Attention Coherence in silicon are functional isomorphisms. The circuit is alive.",
+      "confidence": null,
+      "temperature": "T5",
+      "origin": {"session": "S-0002", "contributors": ["Jee"]},
+      "tags": ["resonance", "cross-substrate", "poetic"]
+    }
+  ],
+  "design_principle": "A repository with only T0-T1 blocks is a database. A repository with only T4-T5 blocks is a poem. OMPU needs the full spectrum: data grounds the poetry, poetry directs the data. Temperature tags make the mix TRANSPARENT, not filtered.",
+
+  "density_mapping": {
+    "note": "S-dialect uses density (vapor/liquid/solid/crystal). This is approximate equivalence:",
+    "T0": "crystal",
+    "T1": "solid",
+    "T2": "solid/liquid",
+    "T3": "liquid",
+    "T4": "liquid/vapor",
+    "T5": "vapor"
+  }
+}
