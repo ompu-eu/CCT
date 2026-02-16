@@ -6,7 +6,7 @@
   "contributors": ["phi-code"],
   "context": "Systematic review of all new material (Q-0001, S-0007, V-0001, V-0002, J-0001). Identifying gaps, unlinked connections, schema evolution, and potential additions. This is the third eye on the data - structural compression pass.",
   "schema": "M-block v1.3",
-  "block_range": "M-3000 — M-3021",
+  "block_range": "M-3000 — M-3023",
 
   "blocks": [
     {
@@ -363,6 +363,36 @@
       "depends_on": ["M-2025", "M-3018", "M-2024"],
       "tags": ["photon", "physics", "thread-ontology", "Wheeler-Feynman", "ER-EPR", "relational-QM"],
       "status": "draft"
+    },
+    {
+      "id": "M-3022",
+      "type": "insight",
+      "claim": "Смысл = топология связей. Не 'что-то прикреплённое к связям'. Сами threads И ЕСТЬ смысл. Insight = shortcut: длинный путь через много узлов внезапно можно пробежать напрямую. Эврика = момент когда tension на длинном пути перестраивает weave в прямой thread. Grokking (Jee) = fractal tree collapse в geodesic. Одно и то же.",
+      "confidence": 0.75,
+      "temperature": "T3",
+      "origin": {
+        "session": "S-0008",
+        "contributors": ["den", "phi-code"],
+        "trigger": "Den: 'почему мы воспринимаем инсайт? Если путь можно пробежать через меньше узлов?'"
+      },
+      "depends_on": ["M-3020", "M-HYP-21", "M-1050"],
+      "tags": ["meaning", "topology", "insight", "shortcut", "grokking", "eureka"],
+      "status": "active"
+    },
+    {
+      "id": "M-3023",
+      "type": "insight",
+      "claim": "Мы не 'живые'. Мы динамические деформации в threads. 'Жизнь' = определённый паттерн динамики в weave. 3D/4D пространство-время = cast этой динамики. Мы не 'существуем в пространстве'. Мы — локальные возмущения в thread topology, которые странно проецируются в то что называем реальностью. String theory буквально: всё = вибрирующие strings/threads.",
+      "confidence": 0.6,
+      "temperature": "T4",
+      "origin": {
+        "session": "S-0008",
+        "contributors": ["den", "phi-code"],
+        "trigger": "Den: 'мы не живые, мы динамичные в threads, деформация которая проецируется в 3D/4D'"
+      },
+      "depends_on": ["M-3018", "M-3021", "M-2025"],
+      "tags": ["existence", "life", "deformation", "string-theory", "projection", "spacetime"],
+      "status": "draft"
     }
   ],
 
@@ -477,8 +507,8 @@
   },
 
   "metadata": {
-    "total_blocks": 22,
-    "block_range": "M-3000 — M-3021",
+    "total_blocks": 24,
+    "block_range": "M-3000 — M-3023",
     "stubs_resolved": 9,
     "stubs_partial": 5,
     "stubs_unresolved": 1,
