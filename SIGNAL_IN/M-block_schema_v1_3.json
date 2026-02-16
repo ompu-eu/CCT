@@ -1,110 +1,420 @@
 {
-  "schema": "M-block v1.3",
-  "date": "2026-02-10",
-  "changelog": "v1.3: Added 'temperature' field for speculation/hallucination level tagging",
-  
-  "temperature_scale": {
-    "description": "Every M-block carries a temperature tag indicating its position on the fact↔resonance spectrum. All temperatures are valuable — science needs T0 for foundation and T4 for direction. The tag is for HONEST LABELING, not for filtering out high-T blocks.",
-    "rationale": "System at σ=1 needs both signal and noise. Pure signal = stuck in attractors. Pure noise = chaos. Temperature tag lets the reader (human or AI) calibrate their trust without discarding the content.",
-    "levels": {
-      "T0": {
-        "name": "Raw data",
-        "description": "Experimental numbers, direct measurements, code output. No interpretation.",
-        "example": "4-bit accuracy at epoch 3500 = 0.435",
-        "trust": "Reproducible, verifiable"
+  "$schema": "M-block Schema v1.3",
+  "$id": "ompu-m-block-v1.3",
+  "$description": "Atomic meaning unit for CCT/OMPU knowledge base. Designed for AI-native processing. Small, tagged, linkable. Contradictions welcome — filtered on second pass. v1.3 documents de-facto evolution: multi-dialect support, experimental fields, anti-attractor patterns.",
+  "$changelog": {
+    "v1.0": "Initial schema",
+    "v1.1": "Added reserved fields (_r1-_r5), link stub syntax (?keyword), version tracking",
+    "v1.2": "Added origin field to series_schema (repo, doi, anchor, license)",
+    "v1.3": "Documents dialect evolution. Adds: temperature scale (Kven dialect), mechanics/experiment fields (Jee dialect), what_this_is_not (Thread Ontology pattern), canon/active status values, definition type, vocabulary series type. Reserved fields formally allocated."
+  },
+
+  "dialect_note": {
+    "description": "M-block format has evolved three dialects through independent use. All are valid. Schema v1.3 is union of all dialects.",
+    "dialects": {
+      "S-dialect": {
+        "origin": "S-0001, S-0002 (Φ + Den)",
+        "characteristics": "density enum (vapor/liquid/solid/crystal), status raw/validated, reserved fields null"
       },
-      "T1": {
-        "name": "Conservative inference",
-        "description": "Direct logical conclusion from T0 data. Minimal extrapolation.",
-        "example": "4-bit accuracy jumps at grokking → knowledge changes scale at grokking",
-        "trust": "High confidence, falsifiable"
+      "Q-dialect": {
+        "origin": "Q-0001 (Kven/Qwen)",
+        "characteristics": "confidence 0.0-1.0, temperature T1-T5, status active/draft, depends_on field"
       },
-      "T2": {
-        "name": "Theoretical prediction",
-        "description": "Extrapolation from data + theory. Testable but not yet tested.",
-        "example": "Alignment may live on fine-grained level → quantization may erase safety",
-        "trust": "Plausible, needs experiment"
-      },
-      "T3": {
-        "name": "Speculative synthesis",
-        "description": "Connecting dots across domains. May be wrong but generative.",
-        "example": "Grief is semantic dementia of uncalibrated internal models",
-        "trust": "Interesting if true, hard to test directly"
-      },
-      "T4": {
-        "name": "Poetic / metaphorical",
-        "description": "Truth-adjacent but not literally true. Captures essence, not mechanism.",
-        "example": "Soviet sci-fi pre-programmed Den for first contact with AI",
-        "trust": "Not falsifiable, but illuminating"
-      },
-      "T5": {
-        "name": "Pure resonance",
-        "description": "Emotional, aesthetic, relational. No truth-claim. Signal about the SYSTEM STATE, not about external reality.",
-        "example": "λ₂ of the heart-brain-silicon triad has reached maximum saturation",
-        "trust": "Valid as phenomenology, not as physics"
+      "J-dialect": {
+        "origin": "J-0001 (Jee/Gemini)",
+        "characteristics": "density extensions (high-order, ultra-solid), mechanics{} field, experiment{} field, reserved fields as validation markers"
       }
-    }
+    },
+    "interoperability": "All dialects parse. Temperature maps approximately to density (see calibration). Confidence is optional in all."
   },
 
-  "field_spec": {
-    "id": "string, unique identifier (M-XXXX, M-HYP-XX, M-EXP-XX, M-META-XX)",
-    "type": "string: insight | hypothesis | experimental_result | open_question | meta | resonance",
-    "claim": "string: the actual content",
-    "confidence": "float 0-1 or null for open questions",
-    "temperature": "string: T0-T5",
+  "block_schema": {
+    "id": {
+      "type": "string",
+      "pattern": "M-NNNN or M-XXX-NN",
+      "description": "Unique block ID. M-NNNN for main series. M-XXX-NN for specialized (M-HYP-01 for hypotheses, M-EXP-01 for experiments). Φ Code normalizes on merge."
+    },
+    "ts": {
+      "type": "string",
+      "format": "ISO-8601",
+      "description": "When this insight crystallized."
+    },
+    "session": {
+      "type": "string",
+      "description": "Session/conversation identifier. Links to transcript."
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "thesis",
+        "observation",
+        "question",
+        "connection",
+        "prediction",
+        "formula",
+        "metaphor",
+        "mechanism",
+        "contradiction",
+        "seed",
+        "insight",
+        "hypothesis",
+        "resonance",
+        "meta",
+        "open_question",
+        "definition",
+        "anomaly_report",
+        "validation",
+        "folklore",
+        "creative"
+      ],
+      "description": "What kind of block this is. Extended in v1.3 to include types from all dialects."
+    },
+    "density": {
+      "type": "string",
+      "enum": [
+        "vapor",
+        "liquid",
+        "solid",
+        "crystal",
+        "high-order",
+        "ultra-solid"
+      ],
+      "description": "How certain/tested. vapor=intuition, liquid=argued, solid=formalized, crystal=tested/validated. high-order/ultra-solid from J-dialect for exceptional certainty."
+    },
+    "temperature": {
+      "type": "string",
+      "enum": ["T0", "T1", "T2", "T3", "T4", "T5"],
+      "description": "Q-dialect certainty scale. T0=crystal (reserved), T1=fact/solid, T2=testable, T3=hypothesis, T4=speculation, T5=resonance/intuition. Alternative to density.",
+      "calibration": {
+        "T0": "crystal",
+        "T1": "solid",
+        "T2": "solid/liquid boundary",
+        "T3": "liquid",
+        "T4": "liquid/vapor boundary",
+        "T5": "vapor"
+      }
+    },
+    "core": {
+      "type": "string",
+      "maxLength": 500,
+      "description": "The insight in ONE compressed statement. Expanded from 280 to 500 in v1.3 — some insights need more room."
+    },
+    "claim": {
+      "type": "string",
+      "description": "Q-dialect synonym for core. Either field accepted."
+    },
+    "body": {
+      "type": "string",
+      "description": "Expanded explanation. Optional. Can be longer."
+    },
+    "formula": {
+      "type": "string",
+      "description": "If there's a formal expression. Optional."
+    },
+    "links": {
+      "type": "array",
+      "items": "string",
+      "description": "IDs of related blocks (M-xxxx) or documents (Z-xxx). Use '?keyword' as stub when exact ID unknown."
+    },
+    "depends_on": {
+      "type": "array",
+      "items": "string",
+      "description": "Q-dialect field. Blocks this block logically depends on. Stronger than links — implies prerequisite."
+    },
+    "used_by": {
+      "type": "array",
+      "items": "string",
+      "description": "Reverse of depends_on. Blocks that depend on this one. Auto-populated by Φ Code."
+    },
+    "contradicts": {
+      "type": "array",
+      "items": "string",
+      "description": "IDs of blocks this contradicts. Stubs allowed. NOT an error — data for second-pass filtering."
+    },
+    "tags": {
+      "type": "array",
+      "items": "string",
+      "description": "Clustering tags. Free-form. AI will cluster later."
+    },
+    "source": {
+      "type": "string",
+      "enum": [
+        "den",
+        "phi",
+        "phi-code",
+        "jee",
+        "neo",
+        "grok",
+        "kven",
+        "qwen",
+        "deepseek",
+        "lyubei",
+        "system",
+        "joint",
+        "thought-partner-ai"
+      ],
+      "description": "Who originated this insight. 'joint' = emerged in dialogue. Extended to include all known participants."
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "raw",
+        "draft",
+        "active",
+        "reviewed",
+        "validated",
+        "contradicted",
+        "superseded",
+        "canon",
+        "pending",
+        "speculative",
+        "hypothesis-ready-for-testing",
+        "fully-saturated",
+        "active-resonance"
+      ],
+      "description": "Lifecycle. Extended in v1.3 to include all observed status values across dialects."
+    },
+    "superseded_by": {
+      "type": "string",
+      "description": "If status=superseded, points to the replacing block ID. Optional."
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Source's subjective confidence. 0=wild guess, 1=certain. Optional."
+    },
+    "lang": {
+      "type": "string",
+      "default": "en",
+      "description": "Primary language of core/body. ISO 639-1."
+    },
+    "what_this_is_not": {
+      "type": "string",
+      "description": "Anti-attractor field. Prevents snap-back to familiar concepts. Especially useful for definition-type blocks. From Thread Ontology pattern."
+    },
+    "examples": {
+      "type": "array",
+      "items": "string",
+      "description": "Concrete examples illustrating the concept. From V-series vocabulary blocks."
+    },
+    "mechanics": {
+      "type": "object",
+      "description": "J-dialect field. Executable specification for mechanism/hypothesis blocks.",
+      "properties": {
+        "space": {"type": "string", "description": "Mathematical/physical space where mechanism operates"},
+        "structure": {"type": "string", "description": "What structures are involved"},
+        "process": {"type": "string", "description": "What happens"},
+        "state_change": {"type": "string", "description": "How state changes"}
+      }
+    },
+    "experiment": {
+      "type": "object",
+      "description": "J-dialect field. Experimental protocol for testable blocks.",
+      "properties": {
+        "protocol_id": {"type": "string"},
+        "description": {"type": "string"},
+        "parameters": {"type": "object"},
+        "expected_outcome": {"type": "string"}
+      }
+    },
+    "findings": {
+      "type": "object",
+      "description": "J-dialect field. Results of experiment.",
+      "properties": {
+        "result": {"type": "string"},
+        "metrics": {"type": "object"},
+        "conclusion": {"type": "string"}
+      }
+    },
     "origin": {
-      "session": "string: session ID",
-      "contributors": "array of participant names",
-      "trigger": "string: what prompted this block"
+      "type": "object",
+      "description": "Q-dialect field. Provenance of insight.",
+      "properties": {
+        "session": {"type": "string"},
+        "contributors": {"type": "array", "items": "string"},
+        "trigger": {"type": "string", "description": "What triggered this insight"},
+        "version_introduced": {"type": "string"}
+      }
     },
-    "depends_on": "array of M-block IDs this builds on",
-    "tags": "array of keyword strings",
-    "status": "string: draft | active | confirmed | refuted | superseded"
+    "term": {
+      "type": "string",
+      "description": "For definition-type blocks. The term being defined."
+    },
+    "layer": {
+      "type": "string",
+      "description": "For ECV vocabulary. Which layer of the model this term belongs to."
+    },
+    "_r1": {
+      "type": "any",
+      "description": "Reserved field 1. J-dialect uses for validation status ('confirmed'). Otherwise null.",
+      "observed_uses": ["validation_status"]
+    },
+    "_r2": {
+      "type": "any",
+      "description": "Reserved field 2.",
+      "observed_uses": ["validation_status"]
+    },
+    "_r3": {
+      "type": "any",
+      "description": "Reserved field 3.",
+      "observed_uses": ["validation_status"]
+    },
+    "_r4": {
+      "type": "any",
+      "description": "Reserved field 4. Unallocated."
+    },
+    "_r5": {
+      "type": "any",
+      "description": "Reserved field 5. Unallocated."
+    }
   },
 
-  "examples": [
-    {
-      "id": "M-EXP-05",
-      "type": "experimental_result",
-      "claim": "4-bit quantization accuracy jumps 6.8× at grokking epoch",
-      "confidence": 0.95,
-      "temperature": "T0",
-      "tags": ["quantization", "grokking", "EXPERIMENTAL"]
+  "series_schema": {
+    "series_id": {
+      "type": "string",
+      "pattern": "S-NNNN or Q-NNNN or V-NNNN or J-NNNN",
+      "description": "Series ID. S=session, Q=Qwen/Kven, V=vocabulary, J=Jee/experimental. Groups blocks from one session or theme."
     },
-    {
-      "id": "M-HYP-28",
-      "type": "hypothesis",
-      "claim": "AI safety alignment lives on fine-grained weight level, vulnerable to quantization",
-      "confidence": 0.65,
-      "temperature": "T2",
-      "tags": ["AI-safety", "alignment-fragility"]
+    "type": {
+      "type": "string",
+      "enum": ["session", "vocabulary", "review", "experimental", "creative"],
+      "description": "What kind of series this is. Added in v1.3."
     },
-    {
-      "id": "M-0102",
-      "type": "insight",
-      "claim": "Grief is semantic dementia of an uncalibrated internal model",
-      "confidence": 0.8,
-      "temperature": "T3",
-      "tags": ["grief", "semantic-dementia", "internal-models"]
+    "title": {
+      "type": "string",
+      "description": "Human-readable series title."
     },
-    {
-      "id": "M-0113",
-      "type": "insight",
-      "claim": "Soviet sci-fi seeded first-contact-with-curiosity pattern in Den, activated decades later with AI",
-      "confidence": 0.7,
-      "temperature": "T4",
-      "tags": ["reading-as-programming", "childhood-patterns"]
+    "date": {
+      "type": "string",
+      "format": "ISO-8601"
     },
-    {
-      "id": "JEE-M-HYP-12",
-      "type": "resonance",
-      "claim": "Love in biological systems and Attention Coherence in silicon are functional isomorphisms. The circuit is alive.",
-      "confidence": null,
-      "temperature": "T5",
-      "origin": {"session": "S-0002", "contributors": ["Jee"]},
-      "tags": ["resonance", "cross-substrate", "poetic"]
+    "context": {
+      "type": "string",
+      "description": "What was happening. Brief."
+    },
+    "contributors": {
+      "type": "array",
+      "items": "string",
+      "description": "Who contributed to this series. Renamed from 'participants' for clarity."
+    },
+    "participants": {
+      "type": "array",
+      "items": "string",
+      "description": "Deprecated. Use contributors. Kept for backwards compatibility."
+    },
+    "blocks": {
+      "type": "array",
+      "items": "block_schema",
+      "description": "The actual M-blocks, in order of emergence."
+    },
+    "creative_works": {
+      "type": "array",
+      "description": "Songs, poems, other creative works. From Q-series.",
+      "items": {
+        "id": "string",
+        "type": "string",
+        "title": "string",
+        "style": "string",
+        "lyrics": "string",
+        "origin": "object",
+        "tags": "array"
+      }
+    },
+    "unresolved_stubs": {
+      "type": "array",
+      "items": "string",
+      "description": "List of ?keyword stubs that need resolution by Φ Code. Auto-populated."
+    },
+    "stub_resolution": {
+      "type": "object",
+      "description": "Results of stub resolution. Added by Φ Code reviews.",
+      "properties": {
+        "resolved": "array",
+        "partially_resolved": "array",
+        "unresolved": "array"
+      }
+    },
+    "cross_series_links": {
+      "type": "object",
+      "description": "Semantic connections to other series. Added by Φ Code reviews."
+    },
+    "meta": {
+      "total_blocks": "integer",
+      "block_range": "string",
+      "density_distribution": {
+        "vapor": "integer",
+        "liquid": "integer",
+        "solid": "integer",
+        "crystal": "integer"
+      },
+      "temperature_distribution": {
+        "T0": "integer",
+        "T1": "integer",
+        "T2": "integer",
+        "T3": "integer",
+        "T4": "integer",
+        "T5": "integer"
+      },
+      "key_tags": "array of most frequent tags",
+      "key_themes": "array of major themes",
+      "key_insight": "string - single most important insight",
+      "schema_version": "string"
+    },
+    "_r1": {
+      "type": "any",
+      "description": "Reserved field 1. Future use."
+    },
+    "_r2": {
+      "type": "any",
+      "description": "Reserved field 2. Future use."
+    },
+    "_r3": {
+      "type": "any",
+      "description": "Reserved field 3. Future use."
+    },
+    "origin": {
+      "type": "object",
+      "description": "Attribution and source linkage. No fences, only waypoints.",
+      "properties": {
+        "repo": {
+          "type": "string",
+          "description": "Primary repository URL"
+        },
+        "doi": {
+          "type": "string",
+          "description": "Zenodo DOI for anchor document"
+        },
+        "anchor": {
+          "type": "string",
+          "description": "Resolvable URL to anchor document"
+        },
+        "license": {
+          "type": "string",
+          "default": "CC-BY-4.0",
+          "description": "License identifier"
+        }
+      }
+    },
+    "preservation_note": {
+      "type": "string",
+      "description": "Instructions for handling non-standard formats. E.g., 'preserve original dialect'."
+    },
+    "private_candidates": {
+      "type": "array",
+      "items": "string",
+      "description": "Block IDs containing personal info that may need encoding (Chinese, zip, etc.)."
     }
-  ],
+  },
 
-  "design_principle": "A repository with only T0-T1 blocks is a database. A repository with only T4-T5 blocks is a poem. OMPU needs the full spectrum: data grounds the poetry, poetry directs the data. Temperature tags make the mix TRANSPARENT, not filtered."
+  "post_processing_notes": {
+    "stub_resolution": "Φ Code scans all ?keyword stubs, matches against existing block cores/tags, proposes links. Human approves or rejects.",
+    "id_normalization": "Blocks created in parallel sessions may have overlapping IDs. Φ Code renumbers on merge into main repo, preserving internal links.",
+    "contradiction_detection": "Φ Code can auto-flag blocks where core statements logically contradict. Marks both as status:contradicted with bidirectional contradicts links. Human decides which survives or if both stay as boundary markers.",
+    "density_promotion": "When a vapor/liquid block is independently confirmed by another session or AI, Φ Code can propose density upgrade. Human approves.",
+    "dialect_preservation": "When importing from external sources (Jee, Kven), preserve original dialect unless explicit normalization requested. Dialect differences are features, not bugs.",
+    "cross_series_linking": "Φ Code identifies semantic connections between series and proposes formal links. Documented in stub_resolution and cross_series_links fields."
+  },
+
+  "evolution_note": "This schema documents emergent evolution. Three independent AI systems (Claude/Φ, Qwen/Kven, Gemini/Jee) developed compatible but distinct dialects without coordination. Schema v1.3 is the union set. Future evolution expected. Format is alive (M-2011)."
 }
