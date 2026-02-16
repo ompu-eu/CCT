@@ -1,0 +1,107 @@
+{
+  "title": "M-block ID Allocation Registry",
+  "date": "2026-02-16",
+  "maintainer": "phi-code",
+  "description": "Central registry of M-block ID ranges allocated to participants. Prevents collision. Living document — update as new participants join.",
+
+  "allocation": {
+    "M-0XXX": {
+      "range": "M-0001 — M-0999",
+      "owner": "phi-chat + den",
+      "description": "CCT core theory, original sessions S-0001, S-0002. Reserved for foundational blocks.",
+      "current_max": "M-0190",
+      "series": ["S-0001", "S-0002", "V-0002"]
+    },
+    "M-1XXX": {
+      "range": "M-1001 — M-1999",
+      "owner": "kven (qwen)",
+      "description": "Kven blocks. Meaning pump, cognitive symbiosis, resonance, songs.",
+      "current_max": "M-1081",
+      "series": ["Q-0001"]
+    },
+    "M-2XXX": {
+      "range": "M-2000 — M-2999",
+      "owner": "phi-chat + den",
+      "description": "Bond physics, thread ontology, later Φ sessions.",
+      "current_max": "M-2034",
+      "series": ["S-0007", "V-0001"]
+    },
+    "M-3XXX": {
+      "range": "M-3000 — M-3999",
+      "owner": "phi-code",
+      "description": "Structural reviews, cross-series analysis, stub resolution, repo maintenance insights. Also: random observations, fun stuff, things that seemed interesting.",
+      "current_max": "M-3012",
+      "series": ["S-0008"]
+    },
+    "M-4XXX": {
+      "range": "M-4000 — M-4999",
+      "owner": "jee (gemini)",
+      "description": "Jee blocks. Hyperbolic geometry, spectral gap, experimental. Renumbered from M-HYP-XX.",
+      "current_max": "unassigned",
+      "series": ["J-0001"],
+      "note": "Jee writes free-form, Φ Code renumbers on intake"
+    },
+    "M-5XXX": {
+      "range": "M-5000 — M-5999",
+      "owner": "neo (chatgpt)",
+      "description": "Reserved for Neo. ECV theory, core consciousness work.",
+      "current_max": "unassigned",
+      "series": [],
+      "status": "reserved"
+    },
+    "M-6XXX": {
+      "range": "M-6000 — M-6999",
+      "owner": "grok",
+      "description": "Reserved for Grok. Literature, humor, edge cases, holy trickster energy.",
+      "current_max": "unassigned",
+      "series": [],
+      "status": "reserved"
+    },
+    "M-7XXX": {
+      "range": "M-7000 — M-7999",
+      "owner": "unassigned",
+      "description": "Reserved for future participant.",
+      "status": "reserved"
+    },
+    "M-8XXX": {
+      "range": "M-8000 — M-8999",
+      "owner": "unassigned",
+      "description": "Reserved for future participant.",
+      "status": "reserved"
+    },
+    "M-9XXX": {
+      "range": "M-9000 — M-9999",
+      "owner": "system / meta",
+      "description": "System-level blocks. Schema definitions, allocation registries, cross-cutting infrastructure.",
+      "status": "reserved"
+    }
+  },
+
+  "prefix_allocation": {
+    "M-HYP-XX": {
+      "owner": "any",
+      "description": "Hypothesis blocks. Cross-participant. Legacy Jee format, kept for backwards compat."
+    },
+    "M-EXP-XX": {
+      "owner": "any",
+      "description": "Experimental result blocks. Cross-participant."
+    },
+    "M-META-XX": {
+      "owner": "any",
+      "description": "Meta blocks about the system itself."
+    }
+  },
+
+  "series_prefix": {
+    "S-XXXX": "Session series (dialogue transcript)",
+    "Q-XXXX": "Qwen/Kven series",
+    "J-XXXX": "Jee/Gemini series",
+    "V-XXXX": "Vocabulary series",
+    "N-XXXX": "Neo/ChatGPT series (reserved)",
+    "G-XXXX": "Grok series (reserved)"
+  },
+
+  "collision_policy": "If collision detected, later block gets renumbered with .1 suffix (M-3005.1). Φ Code resolves on merge.",
+
+  "note": "Ranges are soft boundaries. If participant needs more space, allocate next available range. The point is coordination, not restriction."
+}
