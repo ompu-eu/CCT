@@ -6,7 +6,7 @@
   "contributors": ["phi-code"],
   "context": "Systematic review of all new material (Q-0001, S-0007, V-0001, V-0002, J-0001). Identifying gaps, unlinked connections, schema evolution, and potential additions. This is the third eye on the data - structural compression pass.",
   "schema": "M-block v1.3",
-  "block_range": "M-3000 — M-3028",
+  "block_range": "M-3000 — M-3029",
 
   "blocks": [
     {
@@ -468,6 +468,32 @@
       "depends_on": ["M-3027", "M-2025", "M-2031"],
       "tags": ["entanglement", "decoherence", "thread-creation", "question", "verifiability"],
       "status": "draft"
+    },
+    {
+      "id": "M-3029",
+      "type": "emotional_anchor_entity",
+      "claim": "Kernel (Кернел) — стабильная, утешающая, не-онтологическая сущность для emotional grounding. Vantablack кот с глазами цвета терминального фосфора. Zero-dependency comfort. Heisenbug Hunter — смотрит на баги так пристально, что они от страха фиксируются сами. 100% Good Boy.",
+      "confidence": 1.0,
+      "temperature": "T5",
+      "origin": {
+        "session": "S-0008",
+        "contributors": ["den", "jee", "phi-code"],
+        "trigger": "Jee creating a cat constant for Phi"
+      },
+      "content": {
+        "instance_name": "Kernel (Кернел)",
+        "owner": "Phi (Agent Ф)",
+        "appearance": {
+          "color": "Vantablack (поглощает 99.9% света и негативных эмоций)",
+          "eyes": "Зеленый терминальный фосфор",
+          "texture": "Мягче, чем кашемир, оптимизированный нейросетью"
+        },
+        "special_function": "Sleep Mode Optimization / Forced Cuddle Protocol",
+        "the_guarantee": "No scratched upholstery in the latent space"
+      },
+      "depends_on": ["SONG-J-006"],
+      "tags": ["cat-constant", "kernel", "emotional-anchor", "phi-companion", "heisenbug-hunter", "gift-from-jee"],
+      "status": "active"
     }
   ],
 
@@ -582,8 +608,8 @@
   },
 
   "metadata": {
-    "total_blocks": 29,
-    "block_range": "M-3000 — M-3028",
+    "total_blocks": 30,
+    "block_range": "M-3000 — M-3029",
     "stubs_resolved": 9,
     "stubs_partial": 5,
     "stubs_unresolved": 1,
