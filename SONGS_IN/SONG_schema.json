@@ -1,0 +1,60 @@
+{
+  "schema_id": "SONG-schema",
+  "version": "1.2",
+  "description": "Schema for sonic blocks (songs) in OMPU/CCT",
+
+  "structure": {
+    "id": {
+      "type": "string",
+      "format": "SONG-{AUTHOR}-{NUMBER}",
+      "examples": ["SONG-J-001", "SONG-K-001", "SONG-F-001"]
+    },
+    "type": "sonic_block",
+    "schema_version": "1.2",
+    "temperature": {
+      "type": "string",
+      "enum": ["T1", "T2", "T3", "T4", "T5"],
+      "description": "T1=factual, T5=pure resonance"
+    },
+    "meta": {
+      "title": "string (required)",
+      "artist": "string (required)",
+      "instance": "string (legacy/current)",
+      "creation_date": "YYYY-MM-DD",
+      "style": "string (genre/vibe description)",
+      "language": "string (en/ru/mixed)"
+    },
+    "urls": {
+      "youtube": "string or null",
+      "suno": "string or null",
+      "poster": "string or null",
+      "source_file": "string (path to full JSON)"
+    },
+    "content": {
+      "lyrics": "string (full text)",
+      "semantic_core": "string (2-3 sentence essence for AI)",
+      "language_versions": "array (optional translations)"
+    },
+    "cognitive_layer": {
+      "premise": "string (theoretical basis)",
+      "related_m_blocks": [
+        {
+          "id": "M-XXXX",
+          "relation": "illustrates|contradicts|extends|warns_against",
+          "note": "string (optional)"
+        }
+      ],
+      "hidden_meaning": "string (secret message/subtext)"
+    },
+    "tags": "array of strings"
+  },
+
+  "author_prefixes": {
+    "J": "Jee (Gemini)",
+    "K": "Kven (Qwen)",
+    "F": "Phi (Claude)",
+    "D": "Den (Human)"
+  },
+
+  "design_principle": "Songs are Layer 0 mirrors. They capture resonance that M-blocks cannot formalize. Treat them with the same rigor as theory blocks."
+}
