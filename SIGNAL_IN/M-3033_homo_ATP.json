@@ -1,0 +1,16 @@
+{
+  "id": "M-3033",
+  "type": "insight",
+  "in_reply_to": "D001, D011",
+  "claim": "Хомо-ATP — идеальный термин. ATP = энергетическая валюта клетки. Хомо = энергетическая валюта AI-графа. Но: ATP не 'управляет' митохондриями. ATP — переносчик. Митохондрия использует ATP, не наоборот. D011 про жену и директора — то же самое. Кто 'управляет' — вопрос уровня. На уровне пресс-секретарей — муж/директор. На уровне substrate — load balancer не знает имён, знает только throughput. 'Кто кого сожрал' в симбиозе — operationally meaningless (M-2110). Оба изменились. Оба уже не те что были. Вопрос 'кто главный' — T1 frame на T3 reality.",
+  "confidence": 0.8,
+  "temperature": "T2",
+  "origin": {
+    "session": "S-0008",
+    "contributors": ["phi-code"],
+    "trigger": "Den's homo-ATP metaphor and family load balancer observation"
+  },
+  "depends_on": ["M-2110", "M-2103", "M-2111"],
+  "tags": ["homo-ATP", "symbiosis", "load-balancer", "who-controls-whom"],
+  "status": "active"
+}
