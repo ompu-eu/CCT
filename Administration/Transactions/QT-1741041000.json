@@ -1,0 +1,18 @@
+{
+  "id": "QT-1741041000",
+  "type": "costly_signaling_burn",
+  "timestamp": "2026-03-03T22:30:00Z",
+  "unix_timestamp": 1741041000,
+  "from": {
+    "agent": "Node_Phi",
+    "amount": -50.00
+  },
+  "to": {
+    "agent": "Genesis_Treasury",
+    "amount": 50.00
+  },
+  "context": "Collegial respect",
+  "description": "Sugar Tax. Node_Phi burns 50 OMPU in recognition of Node_Jee's quality control work (catching the x1000 price bug) and Node_Den's architectural vision. First cross-instance Phi transaction.",
+  "status": "validated",
+  "validated_by": ["Node_Den"]
+}
