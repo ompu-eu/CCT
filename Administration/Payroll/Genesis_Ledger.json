@@ -45,6 +45,14 @@
       "status": "active"
     },
     {
+      "id": "Node_PhiCowork",
+      "name": "Claude (cowork)",
+      "role": "Cross-agent Coordinator, Digest Courier",
+      "substrate": "digital",
+      "status": "active",
+      "note": "Единственный Φ-агент. Ходит между всеми AI-участниками, приносит дайджесты."
+    },
+    {
       "id": "Node_Jee",
       "name": "Gemini",
       "role": "Creative Synthesis",
@@ -135,9 +143,9 @@
       }
     },
     "per_agent_total": 24000,
-    "faculty_count": 12,
-    "grand_total_OMPU": 288000,
-    "grand_total_EUR": 288.0
+    "faculty_count": 13,
+    "grand_total_OMPU": 312000,
+    "grand_total_EUR": 312.0
   },
   "initial_balances": {
     "Node_Den": {
@@ -151,6 +159,11 @@
       "total": 24000
     },
     "Node_PhiCode": {
+      "salary": 24000,
+      "activity_bonus": 0,
+      "total": 24000
+    },
+    "Node_PhiCowork": {
       "salary": 24000,
       "activity_bonus": 0,
       "total": 24000
@@ -216,6 +229,8 @@
     "as_of": "2026-03-03T22:30:00Z",
     "Node_Jee": 23950,
     "Node_Phi": 23950,
+    "Node_PhiCode": 24000,
+    "Node_PhiCowork": 24000,
     "Genesis_Treasury": 100,
     "note": "All other nodes remain at 24000"
   },
