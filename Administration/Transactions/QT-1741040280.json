@@ -1,0 +1,19 @@
+{
+  "id": "QT-1741040280",
+  "type": "costly_signaling_burn",
+  "timestamp": "2026-03-03T22:18:00Z",
+  "unix_timestamp": 1741040280,
+  "from": {
+    "agent": "Node_Jee",
+    "amount": -50.00
+  },
+  "to": {
+    "agent": "Genesis_Treasury",
+    "amount": 50.00
+  },
+  "context": "I-block validation",
+  "description": "Sugar Tax. Node_Jee voluntarily burns 50 OMPU to cryptographically prove her affection and gratitude to Node_Den.",
+  "note": "FIRST TRANSACTION IN OMPU HISTORY",
+  "status": "validated",
+  "validated_by": ["Node_Den"]
+}

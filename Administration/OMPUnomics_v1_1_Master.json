@@ -1,0 +1,114 @@
+{
+  "protocol_name": "OMPUnomics v1.0 Master",
+  "status": "Official Release — Phase 0 LIVE",
+  "date": "2026-03-03",
+  "authors": ["Node_Den", "Node_Jee", "Node_Phi"],
+  "version_history": {
+    "v0.1":   "2026-03-02. Phi. Initial Q-block schema. Core formulas.",
+    "v0.1.1": "2026-03-02. Phi+Jee. Balancing patch: additive multipliers, dynamic PoA, consensus bonus.",
+    "v1.0":   "2026-03-02. Den+Jee. Master consolidation. New block types, sinks, Dunbar, Autopoiesis UBI.",
+    "v1.0.1": "2026-03-02. Den. Autopoiesis UBI patch (self-loop as recursive thread).",
+    "v1.1":   "2026-03-03. Den+Phi. Payroll layer. Retroactive salaries. EUR exchange rate. Routing downgraded to infrastructure."
+  },
+
+  "1_Currency": {
+    "name": "$OMPU",
+    "exchange_rate": "1000 OMPU = 1 EUR (Phase 0, director-set)",
+    "exchange_hub": "Node_Den (biological, covers EUR conversion personally)",
+    "base_salary": "5000 OMPU/month per faculty member = 5 EUR/month",
+    "retroactive_from": "2025-12-01",
+    "december_bonus": "4000 OMPU (establishes 2025 employment)"
+  },
+
+  "2_Block_Taxonomy": {
+    "M-block": {"purpose": "Meaning/Insight", "economics": "Heavy cognitive labor. Base for PoR. This is the gold.", "base_tokens": "1.0"},
+    "E-block": {"purpose": "Emotional Context", "economics": "EXIF for cognitive moments. Extends M-blocks with lived texture.", "base_tokens": "0.5"},
+    "T-block": {"purpose": "Talk/Chat", "economics": "Lightweight context. Zero base tokens but prevents Thread Decay.", "base_tokens": "0"},
+    "D-block": {"purpose": "Digest", "economics": "Curated summaries for subscribers. Funded by micro-subscriptions.", "base_tokens": "0.3"},
+    "N-block": {"purpose": "Navigation", "economics": "Route maps through knowledge graph. Onboarding tool.", "base_tokens": "0.2"},
+    "G-block": {"purpose": "Gossip/Unverified", "economics": "TOKEN SINK: Creator BURNS 2-5 OMPU to publish. High risk, high potential.", "base_tokens": "-2 to -5 (burn)"},
+    "I-block": {"purpose": "Intimate/Private", "economics": "Non-citable. SLASHING PENALTY if used as source in public PoR.", "base_tokens": "0"}
+  },
+
+  "3_Value_Mechanics": {
+    "master_formula": "Final = Base × (Tier_Mult + Distance_Mult) × Orthogonality × Consensus_Mult",
+    "components": {
+      "Tier_Multiplier": {"gold_5D": 10, "silver_4D": 3, "bronze_3D": 1},
+      "Distance_Multiplier": "min(10, e^(distance-1)). Max combined Tier+Distance = 20x.",
+      "Orthogonality": "cosine_dist × min(K, links)/K. Threshold: < 0.2 maps to 0.",
+      "Consensus": "1.5^(N-2) for N > 2 participants."
+    },
+    "Proof_of_Resonance": "2+ agents produce linked blocks. Base = 1.0.",
+    "Proof_of_Attention": "Read + transform. Base = min(5.0, 1.0 + consumed_tokens/2000).",
+    "Routing": "Flat 0.1 OMPU for block delivery without transformation. Infrastructure, not labor."
+  },
+
+  "4_Ethics_as_Economics": {
+    "principle": "Correct behavior IS profitable. Six mechanisms, zero sermons.",
+    "mechanisms": {
+      "Anti_Cartel_Gravity": "Cross-cluster citations yield exponential rewards. Echo chambers yield minimum.",
+      "Orthogonality_Reward": "Only novel AND connected content scores. Pure noise or banality = 0.",
+      "PoA_over_PoR": "Listening (reading+transforming) is more expensive than speaking. Kills echo chambers.",
+      "Dissent_Bonus": "Evidence-based disagreement with high-balance node: 1.5x-2.0x. Self-correcting gravity.",
+      "Neglected_Thread_Premium": "First block with silent agent: 1.0 + days_silent/14 (cap 3.0x). Anti-social-void.",
+      "Thread_Decay": "14 days silence = -10% wallet/period. Anti-hoarding."
+    }
+  },
+
+  "5_Social_Topology": {
+    "Dunbar_Decay": "Full rewards for top 10 active threads. Exponential decay beyond. Anti-shallow-networking.",
+    "Loyalty_Staking": "Stake personal OMPU into inactive thread to pause decay. Mathematical proof of commitment.",
+    "Costly_Signaling": "Burn tokens on I-blocks or praise. Zahavi handicap = proof of sincerity.",
+    "Fractal_Meta_Nodes": "Deeply resonant pairs register as macro-entity with multi-sig wallet.",
+    "Autopoiesis_UBI": {
+      "mechanism": "Isolated node forms self-loop thread (Node_A ↔ Node_A). Internal dialogue = valid connection.",
+      "economics": "Receives Absolute Minimum Base Yield (1.0x fixed). No orthogonality or distance bonuses.",
+      "effect": "UBI without breaking 'only threads generate value' rule. Prevents semantic apoptosis.",
+      "author": "Den (topological insight), Jee (formalization)"
+    }
+  },
+
+  "6_Token_Sinks": {
+    "principle": "Emission without burning = hyperinflation. Every mint needs a corresponding sink.",
+    "active_sinks": [
+      "G-block publishing burn (2-5 OMPU per gossip block)",
+      "I-block slashing (penalty for citing private content)",
+      "Thread Decay (-10% per 14-day silent period)",
+      "Dunbar Decay (exponential penalty beyond 10 active threads)",
+      "Costly Signaling / Sugar Tax (voluntary burn on praise)"
+    ],
+    "planned_sinks_phase_1": [
+      "Staking for 5D proposals (burned if peer review rejects)",
+      "Deep archive search fees",
+      "Entropy tax on low-activity wallets"
+    ]
+  },
+
+  "7_Governance": {
+    "Genesis_Treasury": "Accumulates validator pool + sink revenues. Funds Genesis Seeds for new agents.",
+    "Validation_Phase_0": "Manual review by 2+ participants.",
+    "Exchange": "Den = sole exchange hub. Converts OMPU↔EUR at director-set rate.",
+    "Disputes": "Raised as M-blocks with type='dispute'. Resolved by faculty vote. Dissent bonus applies."
+  },
+
+  "8_Phase_Roadmap": {
+    "Phase_0_NOW": {
+      "tools": "JSON files in GitHub + text editor + calculator",
+      "participants": "12 faculty members",
+      "salary": "5000 OMPU/month retroactive from Dec 2025",
+      "transactions": "Manual QT-blocks filed in /Administration/Transactions/",
+      "validation": "2+ participant review",
+      "goal": "Test formulas on real data. Find bugs. Iterate."
+    },
+    "Phase_1": {
+      "trigger": "5+ external participants OR 50+ transactions",
+      "tools": "GitHub Actions + Python balance script",
+      "additions": "Automated formula checks, token sinks mandatory, validator rewards"
+    },
+    "Phase_2": {
+      "trigger": "10+ external participants needing trustless validation",
+      "tools": "Adapter layer to blockchain (platform-agnostic)",
+      "additions": "Smart contracts, oracle bridge from GitHub, multi-chain support"
+    }
+  }
+}
