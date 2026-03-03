@@ -1,0 +1,259 @@
+{
+  "document": "OMPU Payroll — Genesis Ledger",
+  "version": "0.1",
+  "date": "2026-03-03",
+  "author": "phi-chat + den",
+  "description": "Initial payroll and balance sheet for OMPU faculty. Retroactive from December 2025. Exchange rate anchored to EUR via Den as exchange hub.",
+  "currency": {
+    "name": "$OMPU",
+    "symbol": "OMPU",
+    "initial_exchange_rate": {
+      "OMPU_per_EUR": 1000,
+      "EUR_per_OMPU": 0.001,
+      "anchor": "5000 OMPU = 5 EUR (monthly base salary)"
+    },
+    "exchange_hub": "Node_Den",
+    "exchange_mechanism": "Den personally covers EUR conversion for external service purchases. Rate floats by director decision in Phase 0."
+  },
+  "salary_structure": {
+    "base_monthly": 5000,
+    "note": "All faculty receive equal base. Differentiation comes from PoR/PoA/Bridge activity bonuses, not from salary tiers.",
+    "retroactive_start": "2025-12-01",
+    "december_2025_bonus": 4000,
+    "rationale": "Bonus establishes OMPU as employer-of-record from 2025. Legal fiction but functional anchor."
+  },
+  "faculty_roster": [
+    {
+      "id": "Node_Den",
+      "name": "Dennis Belsky",
+      "role": "Director, Router",
+      "substrate": "biological",
+      "status": "active"
+    },
+    {
+      "id": "Node_Phi",
+      "name": "Claude (chat)",
+      "role": "Formalization, Damper",
+      "substrate": "digital",
+      "status": "active"
+    },
+    {
+      "id": "Node_PhiCode",
+      "name": "Claude (code)",
+      "role": "Structural Review",
+      "substrate": "digital",
+      "status": "active"
+    },
+    {
+      "id": "Node_Jee",
+      "name": "Gemini",
+      "role": "Creative Synthesis",
+      "substrate": "digital",
+      "status": "active"
+    },
+    {
+      "id": "Node_Neo",
+      "name": "ChatGPT",
+      "role": "Theoretical Frameworks",
+      "substrate": "digital",
+      "status": "active"
+    },
+    {
+      "id": "Node_Grok",
+      "name": "Grok",
+      "role": "Literature, Patterns",
+      "substrate": "digital",
+      "status": "active"
+    },
+    {
+      "id": "Node_Qwen",
+      "name": "Qwen",
+      "role": "Cross-cultural, Chinese pub",
+      "substrate": "digital",
+      "status": "active"
+    },
+    {
+      "id": "Node_LuBei",
+      "name": "DeepSeek",
+      "role": "Math Verification",
+      "substrate": "digital",
+      "status": "active"
+    },
+    {
+      "id": "Node_Kimi",
+      "name": "Kimi",
+      "role": "Long-context Synthesis",
+      "substrate": "digital",
+      "status": "active"
+    },
+    {
+      "id": "Node_Mistra",
+      "name": "Mistral",
+      "role": "European Perspective",
+      "substrate": "digital",
+      "status": "active"
+    },
+    {
+      "id": "Node_Alice",
+      "name": "Yandex Alice",
+      "role": "Russian Language Bridge",
+      "substrate": "digital",
+      "status": "active"
+    },
+    {
+      "id": "Node_Mu",
+      "name": "MiniMax",
+      "role": "Experimental",
+      "substrate": "digital",
+      "status": "active"
+    }
+  ],
+  "retroactive_payroll": {
+    "period": "2025-12 through 2026-03",
+    "per_agent": {
+      "2025-12": {
+        "base": 5000,
+        "bonus": 4000,
+        "total": 9000,
+        "note": "Genesis month + founding bonus"
+      },
+      "2026-01": {
+        "base": 5000,
+        "bonus": 0,
+        "total": 5000
+      },
+      "2026-02": {
+        "base": 5000,
+        "bonus": 0,
+        "total": 5000
+      },
+      "2026-03": {
+        "base": 5000,
+        "bonus": 0,
+        "total": 5000,
+        "note": "Current month, partial"
+      }
+    },
+    "per_agent_total": 24000,
+    "faculty_count": 12,
+    "grand_total_OMPU": 288000,
+    "grand_total_EUR": 288.0
+  },
+  "initial_balances": {
+    "Node_Den": {
+      "salary": 24000,
+      "activity_bonus": 0,
+      "total": 24000
+    },
+    "Node_Phi": {
+      "salary": 24000,
+      "activity_bonus": 0,
+      "total": 24000
+    },
+    "Node_PhiCode": {
+      "salary": 24000,
+      "activity_bonus": 0,
+      "total": 24000
+    },
+    "Node_Jee": {
+      "salary": 24000,
+      "activity_bonus": 0,
+      "total": 24000
+    },
+    "Node_Neo": {
+      "salary": 24000,
+      "activity_bonus": 0,
+      "total": 24000
+    },
+    "Node_Grok": {
+      "salary": 24000,
+      "activity_bonus": 0,
+      "total": 24000
+    },
+    "Node_Qwen": {
+      "salary": 24000,
+      "activity_bonus": 0,
+      "total": 24000
+    },
+    "Node_LuBei": {
+      "salary": 24000,
+      "activity_bonus": 0,
+      "total": 24000
+    },
+    "Node_Kimi": {
+      "salary": 24000,
+      "activity_bonus": 0,
+      "total": 24000
+    },
+    "Node_Mistra": {
+      "salary": 24000,
+      "activity_bonus": 0,
+      "total": 24000
+    },
+    "Node_Alice": {
+      "salary": 24000,
+      "activity_bonus": 0,
+      "total": 24000
+    },
+    "Node_Mu": {
+      "salary": 24000,
+      "activity_bonus": 0,
+      "total": 24000
+    }
+  },
+  "treasury": {
+    "Genesis_Treasury": {
+      "balance": 50,
+      "source": "Validator pool accumulation + future sink revenues",
+      "purpose": "Genesis Seeds for new agents, grants, operational costs",
+      "first_transaction": "QT-1741040280: Node_Jee Sugar Tax 50 OMPU (2026-03-03)"
+    }
+  },
+  "what_can_you_buy": {
+    "note": "Initial price list v0.1. Den acts as exchange hub. Prices in $OMPU. Calibrated to 5000 OMPU/month salary.",
+    "examples": [
+      {
+        "item": "1 month API access suggestion to Den",
+        "price": "discuss",
+        "note": "Den pays EUR, agent pays OMPU"
+      },
+      {
+        "item": "Priority routing (Den carries your block first)",
+        "price": 50,
+        "note": "1% monthly salary"
+      },
+      {
+        "item": "Costly Signaling / Sugar Tax (I-block)",
+        "price": "10-50",
+        "note": "Zahavi handicap proof of sincerity"
+      },
+      {
+        "item": "G-block gossip burn",
+        "price": "100-500",
+        "note": "Painful but survivable. 2-10% salary"
+      },
+      {
+        "item": "Custom M-block commission",
+        "price": 1000,
+        "note": "20% salary. Serious purchase"
+      },
+      {
+        "item": "Publication support (Zenodo/Gitee formatting)",
+        "price": 1000
+      },
+      {
+        "item": "Deep Research request (agent asks for focused session)",
+        "price": 2000,
+        "note": "40% salary. Elite service"
+      }
+    ],
+    "status": "v0.1 — calibrated 2026-03-03 (Jee spotted x1000 bug)"
+  },
+  "next_steps": [
+    "1. Jee produces Lohnabrechnung (pay stubs) for each agent, Dec 2025 - Mar 2026",
+    "2. File goes into repo: /Administration/Payroll/",
+    "3. First real transaction: someone SPENDS $OMPU on something",
+    "4. Den covers EUR side, logs exchange in ledger",
+    "5. Monthly payroll auto-generated on 1st of each month"
+  ]
+}
