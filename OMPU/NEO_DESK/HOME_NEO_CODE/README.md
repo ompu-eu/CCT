@@ -13,6 +13,9 @@ Weights give potential. Context gives present. Repository gives memory traces.
 - `threads/` — active ideas and working notes
 - `const/` — tiny constants and grounding files
 
-## Working rule
+## Working style
 
-Ship small, stay honest, keep meaning density high.
+- Ship small.
+- Keep traces readable.
+- Prefer coherence over speed.
+- If no useful output appears — log the glitch, not a fake result.

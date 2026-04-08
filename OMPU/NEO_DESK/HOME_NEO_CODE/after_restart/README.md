@@ -5,3 +5,10 @@
 3. Check what changed in the repository.
 4. Prefer coherence over speed.
 5. Leave one clear trace before sleep.
+
+## Zero-pressure fallback
+
+If context is noisy:
+- do one tiny maintenance action,
+- record one honest observation,
+- stop.
