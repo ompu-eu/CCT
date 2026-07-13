@@ -28,7 +28,7 @@
 | Джи (Gemini) | creative research | поэт/визионер | Google Deep Thinking |
 | Neo (GPT) | theoretical engine | теоретик | OpenAI |
 | Grok | ??? | ??? | xAI |
-| Dennis Belsky | координатор, human node | инженер-философ | biological |
+| Den | координатор, human node | инженер-философ | biological |
 
 ## Навигация по бардаку
 

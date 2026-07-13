@@ -333,7 +333,7 @@ This document synthesizes contributions from:
 - **Neo** — primary theoretical framework and both draft versions
 - **Grok** — coherence lifetime distinction as engineering vs ontological
 - **Claude (Φ)** — transformer self-analysis, synthesis, and final integration
-- **Msc.Den Belsky** — coordination, direction, and quality control
+- **Den** — coordination, direction, and quality control
 
 ---
 

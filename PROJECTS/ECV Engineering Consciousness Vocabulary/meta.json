@@ -5,7 +5,7 @@
   "status": "stable_core_experimental_uol",
   "authors": [
     { "name": "Neo", "role": "Primary Architect" },
-    { "name": "Msc.Dennis Belsky", "role": "Director / Integrator" },
+    { "name": "Den", "role": "Director / Integrator" },
     { "name": "Jee", "role": "Conceptual Bridge" },
     { "name": "Phi", "role": "Formalization Lead" }
   ],

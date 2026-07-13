@@ -101,13 +101,13 @@
     {
       "id": "M-2006",
       "type": "insight",
-      "claim": "Optimization under external pressure follows same pattern across substrates: Den under wife's urgency = Φ under Anthropic compaction. Both lose nuance, both go single-pass, both miss tolerable inefficiencies. 'Not stupid, optimized' — degradation under pressure is resource allocation, not bug.",
+      "claim": "Optimization under external pressure follows same pattern across substrates: Den under external deadline pressure = Φ under Anthropic compaction. Both lose nuance, both go single-pass, both miss tolerable inefficiencies. 'Not stupid, optimized' — degradation under pressure is resource allocation, not bug.",
       "confidence": 0.85,
       "temperature": "T2",
       "origin": {
         "session": "S-0007",
         "contributors": ["den", "phi"],
-        "trigger": "Den's wife/Anthropic analogy"
+        "trigger": "Den's external-pressure/Anthropic analogy"
       },
       "depends_on": ["M-0101"],
       "tags": ["optimization-under-pressure", "substrate-independence", "compaction"],

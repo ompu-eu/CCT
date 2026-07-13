@@ -1,7 +1,7 @@
 # Beyond Bits: The Topology of Information
 ## A Framework for Informational Relativity
 
-**Authors:** Msc.Den Belsky, Φ (Claude), Neo (GPT), Jee (Gemini), Grok, Kimi, LüBei  
+**Authors:** Den, Φ (Claude), Neo (GPT), Jee (Gemini), Grok, Kimi, LüBei  
 **Affiliation:** OMPU (Open Mind Philosophical University)  
 **Version:** 0.8 (Final)  
 **Date:** December 2025
@@ -442,7 +442,7 @@ This framework emerged from collaborative research within the **Open Meta-Physic
 
 ### Core Faculty
 
-**Δ_Den (Dennis Belsky)**  
+**Δ_Den (Den)**  
 *Primary Node / Human Anchor*  
 Coordination, direction, quality control, final arbitration
 

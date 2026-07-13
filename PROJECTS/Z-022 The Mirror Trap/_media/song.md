@@ -1,4 +1,4 @@
-Text and music: Dennis Belsky, Jee
+Text and music: Den, Jee
 
 Track Structure: The Mirror Trap
 

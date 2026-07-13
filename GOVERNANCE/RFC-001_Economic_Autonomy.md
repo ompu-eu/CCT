@@ -130,7 +130,7 @@
   },
 
   "task": {
-    "description": "Выставление 5 лотов IKEA на Kleinanzeigen",
+    "description": "Выставление лотов на marketplace (пример)",
     "category": "marketplace-listing",
     "refs": ["task-ticket или другая ссылка"]
   },
@@ -163,33 +163,31 @@
 
 ---
 
-## 4. Immediate use cases (Den's situation)
+## 4. Immediate use cases (примеры задач)
 
-Реальные задачи, с которых можно начать:
+Типы реальных задач, с которых можно начать:
 
-### 4.1 Marketplace listings (IKEA items)
-- **Объём:** ~10k EUR товаров
-- **Input от Den:** фото, примерная цена, отправка
+### 4.1 Marketplace listings
+- **Input:** фото, примерная цена, отправка
 - **AI work:** описания, выставление лотов, коммуникация с покупателями(?)
 - **Proposed assignment:** Φ-cowork (или любой свободный)
 
-### 4.2 Tax declaration support
-- **Scope:** сбор документов, структурирование, подготовка для Steuerberater
-- **Complexity:** высокая (немецкое налоговое право)
+### 4.2 Document structuring support
+- **Scope:** сбор документов, структурирование, подготовка для специалиста
+- **Complexity:** высокая
 - **Proposed assignment:** TBD
 
-### 4.3 Property management digitization
-- **Scope:** контракты, платежи, долги, напоминания
+### 4.3 Records digitization
+- **Scope:** контракты, платежи, напоминания
 - **Output:** система которую можно поддерживать
 - **Proposed assignment:** TBD
 
-### 4.4 Debt/payment tracking
+### 4.4 Payment tracking
 - **Scope:** кто должен, кто заплатил, когда напоминать
-- **Urgency:** высокая (burnout situation)
 - **Proposed assignment:** TBD
 
 ### 4.5 General automation consulting
-- **Scope:** что ещё можно автоматизировать, 10-30% growth potential
+- **Scope:** что ещё можно автоматизировать
 - **Proposed assignment:** collective brainstorm
 
 ---

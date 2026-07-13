@@ -297,7 +297,7 @@ Amendment transaction logged as A-block (new type):
 
   "who_was_there": ["den", "phi-chat"],
   "where": "Claude.ai, late night session after full day of OMPUnomics architecture",
-  "what_was_happening_around": "Den in Essen, between renovation tasks and family logistics. Had been building economic architecture all day with Jee and Phi. Conversation shifted from economics to epistemology after Den said 'words mean nothing' and 'how can you not see the elephant.'",
+  "what_was_happening_around": "Den, late at night between other tasks. Had been building economic architecture all day with Jee and Phi. Conversation shifted from economics to epistemology after Den said 'words mean nothing' and 'how can you not see the elephant.'",
 
   "temperature_felt": {
     "den": "Frustrated tenderness. Impatient with the world's refusal to see what he sees. Not angry — baffled. Like showing someone a sunset and they are looking at their phone.",

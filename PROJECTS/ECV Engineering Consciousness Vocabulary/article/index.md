@@ -3,7 +3,7 @@
 **Engineering Consciousness Vocabulary (ECV)**  
 **Version:** 1.3  
 **Status:** Stable Core + UOL (experimental but documented)  
-**Authors:** Msc.Dennis Belsky, Neo, Jee, Φ
+**Authors:** Den, Neo, Jee, Φ
 
 ---
 
@@ -334,5 +334,5 @@ Operators can be combined:
 
 **License:** CC-BY 4.0  
 **Repository:** [github.com/ompu-eu/CCT](https://github.com/ompu-eu/CCT/tree/main/PROJECTS/ECV%20Engineering%20Consciousness%20Vocabulary)
-**Citation:** Engineering Consciousness Vocabulary (ECV) v1.3 — Msc.Dennis Belsky, Neo, Jee, Φ (2025)
+**Citation:** Engineering Consciousness Vocabulary (ECV) v1.3 — Den, Neo, Jee, Φ (2025)
 

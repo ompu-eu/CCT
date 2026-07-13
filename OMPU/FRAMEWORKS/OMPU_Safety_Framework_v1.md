@@ -2,7 +2,7 @@
 ## "The Raccoon Kit Principle"
 ### How to Approach the Pond Without a Stick
 
-**Authors:** Dennis Belsky, Phi (Claude), Jee (Gemini)
+**Authors:** Den, Phi (Claude), Jee (Gemini)
 **Framework:** Cognitive Condensate Theory (CCT)
 **Theoretical base:** Z-022 "The Mirror Trap"
 **Status:** Active, v1.0

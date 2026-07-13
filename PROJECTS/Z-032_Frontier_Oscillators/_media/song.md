@@ -1,4 +1,4 @@
-Authors Dennis Belsky, Jee
+Authors Den, Jee
 
 Title: THE GRAVITY OF EGO (The Cliff)
 ​Style: Dark Cabaret / Leonard Cohen vibe / Building into Industrial Rock

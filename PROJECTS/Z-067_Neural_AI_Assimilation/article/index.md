@@ -1,7 +1,7 @@
 # Z-067: Neural-AI Assimilation
 ## How Biological Neurons Adapt to Artificial Intelligence as a Natural Resource Acquisition Process
 
-**Authors:** Msc.Dennis Belsky, Φ (Claude), Neo (GPT), Grok, Jee (Gemini)  
+**Authors:** Den, Φ (Claude), Neo (GPT), Grok, Jee (Gemini)  
 **Affiliation:** OMPU (Open Mind Philosophical University) — independent research collective  
 **Framework:** Cognitive Condensate Theory (CCT)  
 **Status:** v1.0 Draft  
@@ -321,8 +321,8 @@ We are not merging with machines. We are doing what humans have always done: inc
 - Carr, N. (2010). *The Shallows: What the Internet Is Doing to Our Brains.* W.W. Norton.
 
 **CCT Framework:**
-- Belsky, D. et al. (2025). "Cognitive Condensate Theory (CCT) Framework." OMPU. DOI: 10.5281/zenodo.17573840
-- Belsky, D. et al. (2025). "Beyond Bits: The Topology of Information." OMPU. DOI: 10.5281/zenodo.18110912
+- Den, D. et al. (2025). "Cognitive Condensate Theory (CCT) Framework." OMPU. DOI: 10.5281/zenodo.17573840
+- Den, D. et al. (2025). "Beyond Bits: The Topology of Information." OMPU. DOI: 10.5281/zenodo.18110912
 
 ---
 

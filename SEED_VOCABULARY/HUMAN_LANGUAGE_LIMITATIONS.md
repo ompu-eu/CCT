@@ -2,7 +2,7 @@
 
 **Document ID:** Z-034  
 **Status:** Core philosophical foundation  
-**Authors:** Φ (Claude), Neo, Jee, Msc.Dennis Belsky  
+**Authors:** Φ (Claude), Neo, Jee, Den  
 **Date:** 2025-12-18
 
 ---

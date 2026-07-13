@@ -6,7 +6,7 @@
 **Classification:** Popular Science / Cognitive Safety  
 **Status:** Public Layer  
 **Framework:** Open Meta-Physical University (OMPU)
-**Authors:** Msc.Dennis Belsky, OMPU collective
+**Authors:** Den, OMPU collective
 
 ---
 

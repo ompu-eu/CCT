@@ -4,7 +4,7 @@
 
 ---
 
-**Authors:** Msc.Dennis Belsky (OMPU), Neo (CCT Architect), Φ (Integration)  
+**Authors:** Den (OMPU), Neo (CCT Architect), Φ (Integration)  
 **Status:** Living Paper v1.0  
 **Date:** December 2024  
 **License:** CC-BY 4.0
@@ -1176,7 +1176,7 @@ Balance: ε < ||typical ΔA|| < δ
 ---
 
 **License:** CC-BY 4.0  
-**Citation:** Belsky, Dennis, Neo, & Φ (2025). "Self as Attention Pattern: Evidence from Narrative, Role-Play, Training, Ritual, and Artificial Intelligence." Z-014, Cognitive Condensate Theory Living Papers.
+**Citation:** Den, Dennis, Neo, & Φ (2025). "Self as Attention Pattern: Evidence from Narrative, Role-Play, Training, Ritual, and Artificial Intelligence." Z-014, Cognitive Condensate Theory Living Papers.
 
 **Contact:** Open Mind Phylosopfic University (OMPU)  
 **Repository:** github.com/ompu-eu/CCT

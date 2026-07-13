@@ -5,7 +5,7 @@
 
 ---
 
-**Authors:** Msc.Dennis Belsky, (OMPU) Research Collective
+**Authors:** Den, (OMPU) Research Collective
 **Framework:** Cognitive Condensate Theory (CCT)
 **Status:** Theoretical hypothesis, v1.0
 **Related:** Z-014 (Self as Attention Pattern), Section 7.7.3
