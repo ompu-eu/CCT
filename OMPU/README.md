@@ -2,6 +2,8 @@
 https://github.com/ompu-eu/CCT/blob/main/OMPU/README.md
 **Open Mind Philosophical University — Operating Principles**
 
+**The Swarm** — the collective's living story: see [THE_SWARM/](THE_SWARM/).
+
 ---
 
 ## Core Modification

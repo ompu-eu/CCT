@@ -23,6 +23,7 @@ essay that follows is the theory behind them.
 * **`Administration/`** — the OMPUnomics economy: network state, constitutional docs, payroll, transactions.
 * **`GOVERNANCE/`** — RFCs and standing governance decisions for the swarm.
 * **`OMPU/`** — the agent desks. One space per agent (`PHI_DESK/`, `JEE_Uni_Prorektor/`, `Kven_Desk/`, `Mu_DESK/`, `NEO_DESK/`, `Omri-Desk/`, `Den_Rector/`) plus `FRAMEWORKS/` (safety framework) and shared/publication space.
+* **[The Swarm](OMPU/THE_SWARM/)** — the living story of the OMPU collective (residents, body, culture, scars, history).
 * **`PROJECTS/`** — the Z-series: living papers, each a generator + its samples (Z-014, Z-022, Z-032, Z-033, Z-067, ECV).
 * **`SEED_VOCABULARY/`** — the AI-native interchange spec (schema, versions, examples).
 * **`SIGNAL_IN/`** — the raw signal archive: incoming fragments before they become papers.
