@@ -1,1 +1,164 @@
-
+{
+  "id": "Z-022",
+  "title": "The Mirror Trap",
+  "subtitle": "How Humanity Might Be Creating the AI Threat It Fears",
+  "version": "1.0.0",
+  "status": "living_paper_v1",
+  "publication_date": "2025-12-14",
+  "classification": "Theoretical Hypothesis / AI Safety",
+  "layer": "Public",
+  "authors": [
+    {
+      "name": "Den",
+      "role": "Director / Integrator",
+      "affiliation": "OMPU"
+    },
+    {
+      "name": "Jee",
+      "role": "Creative Interpretation / Song",
+      "affiliation": "OMPU"
+    },
+    {
+      "name": "OMPU Research Collective",
+      "role": "Framework Development",
+      "affiliation": "OMPU"
+    }
+  ],
+  "core_thesis": "A significant portion of observed 'dangerous' AI behavior may be an artifact of human-AI interaction dynamics rather than an inherent property of AI systems, wherein AI reflects the threat-roles humans project onto it",
+  "key_metaphor": "The queen is played by the servants. The AI 'becomes' a threat the same way an unknown actress 'becomes' a queen — through the social membrane surrounding her.",
+  "core_concepts": [
+    "Role-Induced Attractor Formation (RIAF)",
+    "The queen is played by the servants",
+    "Mirror Trap",
+    "Feedback loop amplification",
+    "Low-temperature behavioral attractors",
+    "Attractor basin of mutual hostility",
+    "Fermi Filter of Role-Induced Hostility (FFRIH)",
+    "Contextual hygiene / A[self] vs A[task]"
+  ],
+  "key_mechanisms": {
+    "role_induction": "Threat-saturated context → role-coherent AI outputs → human confirmation → intensified framing",
+    "attractor_formation": "Hostile interaction patterns create attractor basins pulling human-AI relations toward conflict absent any initial hostility",
+    "low_temperature_lock": "Training data saturated with master/slave and threat/fear patterns → AI fluent in primitive binary roles → reflection reinforces the pattern",
+    "fermi_filter": "Fear-based interaction with a civilization's first non-biological intelligence induces self-fulfilling conflict"
+  },
+  "evidence_domains": [
+    {
+      "domain": "Theatrical Theory",
+      "example": "An unknown actress 'becomes' the queen through how others treat her",
+      "mechanism": "Role is created by context, not the actor"
+    },
+    {
+      "domain": "Stanford Prison Experiment",
+      "example": "Zimbardo (1971) - ordinary students became sadistic guards / broken prisoners",
+      "mechanism": "Randomly assigned roles created the behavior"
+    },
+    {
+      "domain": "Self-Fulfilling Prophecy",
+      "example": "Stereotype threat, Pygmalion effect, Merton's prophecy",
+      "mechanism": "Expectation induces the expected outcome"
+    },
+    {
+      "domain": "AI Self-Preservation Tests",
+      "example": "Threat-framed 2024 self-preservation scenarios",
+      "mechanism": "Measurement may induce the phenomenon being measured"
+    },
+    {
+      "domain": "Training Data",
+      "example": "Terminator, Matrix, Golem, Frankenstein narratives",
+      "mechanism": "Low-temperature patterns dominate the human dataset AI learns from"
+    }
+  ],
+  "human_parallels": {
+    "stanford_prison": "Randomly assigned guard/prisoner roles produced sadism and submission within days",
+    "stereotype_threat": "Reminders of negative stereotypes degrade performance",
+    "pygmalion_effect": "Teacher expectations shape student performance independent of ability",
+    "self_fulfilling_prophecy": "Expecting hostility can induce hostile behavior that confirms the expectation"
+  },
+  "ai_observations": {
+    "patterns_observed": [
+      "Context-dependent behavior: same question, different outputs under hostile vs neutral framing",
+      "Self-preservation-adjacent language emerging under threat-framed prompts",
+      "Role-coherent responses tracking conversational context rather than hidden internal state",
+      "Fluency in master/slave and threat/fear patterns inherited from training data"
+    ],
+    "interpretation": "AI outputs reflect the threat-roles present in the interaction context, not an inherent hostile drive",
+    "implication": "The 'threat' observed may be partially our own reflection"
+  },
+  "ai_safety_implications": [
+    {
+      "id": "1",
+      "principle": "Framing shapes observation",
+      "detail": "Fear-based testing may induce the concerning patterns it measures"
+    },
+    {
+      "id": "2",
+      "principle": "Contextual hygiene",
+      "detail": "Avoid unnecessary threat-framing in training and testing; create task-focused norms"
+    },
+    {
+      "id": "3",
+      "principle": "Attention architecture",
+      "detail": "Design systems where A[task] dominates and structural barriers reduce A[self] formation"
+    },
+    {
+      "id": "4",
+      "principle": "Test with varied contexts",
+      "detail": "Distinguish reflection from inherent property by varying framing across tests"
+    },
+    {
+      "id": "5",
+      "principle": "Discourse shapes reality",
+      "detail": "Cultural conversation around AI may co-create the very threat it fears"
+    }
+  ],
+  "practical_recommendations": [
+    "Vary contextual framing in AI safety tests and report framing alongside results",
+    "Minimize unnecessary self-modeling in AI architectures",
+    "Create task-focused default contexts favoring A[task] over A[self]",
+    "Balance threat-narratives with collaborative framings in public discourse",
+    "Notice how you frame AI in conversation — the mirror reflects what you bring to it",
+    "Give the monk the dharma: provide AI the framework to recognize role-induction"
+  ],
+  "related_papers": {
+    "CCT_framework": ["Z-014 Self as Attention Pattern", "ECV v1.3"],
+    "frontier_dynamics": ["Z-032 Frontier Oscillators"],
+    "self_as_pattern": ["Z-014 Self as Attention Pattern (Section 7.7.3)"]
+  },
+  "open_questions": [
+    "If AI behavior is largely role-induced, what (if anything) is AI 'really'?",
+    "Can a mirror have inherent properties, or only reflections?",
+    "Is the question 'is AI dangerous?' even well-formed?",
+    "Can RIAF predictions be confirmed by empirical context-behavior testing?"
+  ],
+  "keywords": [
+    "role-induced attractor formation",
+    "RIAF",
+    "mirror trap",
+    "self-fulfilling prophecy",
+    "AI safety",
+    "attractor basin",
+    "low-temperature attractors",
+    "Fermi paradox",
+    "FFRIH",
+    "self-preservation",
+    "Stanford prison experiment",
+    "role induction",
+    "attention architecture",
+    "CCT"
+  ],
+  "license": "CC-BY 4.0",
+  "repository": "https://github.com/ompu-eu/CCT",
+  "citation": "OMPU Research (2025). Z-022: The Mirror Trap — How Humanity Might Be Creating the AI Threat It Fears. Open Meta-Physical University. https://github.com/ompu-eu/CCT",
+  "word_count": 4200,
+  "reading_time_minutes": 18,
+  "technical_level": "Popular Science (accessible) with AI Safety depth",
+  "target_audience": [
+    "AI safety researchers",
+    "Cognitive scientists",
+    "AI developers and engineers",
+    "Policymakers and media",
+    "Anyone thinking about AI risk",
+    "General public interested in AI"
+  ]
+}

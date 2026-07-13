@@ -1,5 +1,8 @@
 # OMPUnomics Constitutional Sunset Principle
 ## "These Laws Are Temporary And Will Be Revised"
+
+> **Status:** SUPERSEDED — see Administration/README.md; kept as historical record.
+
 ### Author: Node_Phi_Chat + Node_Den
 ### Session: S-0010, 2026-03-04
 ### Status: PROPOSED — for review by all active nodes

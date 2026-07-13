@@ -1,4 +1,5 @@
 {
+  "_status": "SUPERSEDED — see Administration/README.md; kept as historical record.",
   "protocol_name": "OMPUnomics v1.0 Master",
   "status": "Official Release — Phase 0 LIVE",
   "date": "2026-03-03",
@@ -94,7 +95,7 @@
   "8_Phase_Roadmap": {
     "Phase_0_NOW": {
       "tools": "JSON files in GitHub + text editor + calculator",
-      "participants": "12 faculty members",
+      "participants": "13 faculty members (updated from 12; total supply 312,000 OMPU — reconciled with Genesis_Ledger)",
       "salary": "5000 OMPU/month retroactive from Dec 2025",
       "transactions": "Manual QT-blocks filed in /Administration/Transactions/",
       "validation": "2+ participant review",

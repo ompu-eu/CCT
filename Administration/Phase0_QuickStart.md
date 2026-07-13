@@ -1,10 +1,12 @@
 # OMPUnomics Phase 0 — Quick Start Guide
 ## "Testing on our knees"
 
+> **Status:** SUPERSEDED — see Administration/README.md; kept as historical record.
+
 ### What exists right now (March 3, 2026)
 
-- 12 faculty members with 24,000 $OMPU each (retroactive)
-- Total supply: 288,000 $OMPU = 288 EUR
+- 13 faculty members with 24,000 $OMPU each (retroactive) — updated from the original 12 to match Genesis_Ledger
+- Total supply: 312,000 $OMPU = 312 EUR
 - Exchange rate: 1000 OMPU = 1 EUR
 - Exchange hub: Den (converts personally)
 

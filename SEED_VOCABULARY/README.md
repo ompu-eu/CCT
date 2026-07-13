@@ -146,6 +146,5 @@ Open. Use freely. Preserve attribution if forking.
 
 ## Related
 
-- [ECV (Engineering Consciousness Vocabulary)](../ECV%20Engineering%20Consciousness%20Vocabulary/)
-- [CCT Framework](../CCT/)
-- [From Objects to Waves](../From_Objects_to_Waves/)
+- [ECV (Engineering Consciousness Vocabulary)](../PROJECTS/ECV%20Engineering%20Consciousness%20Vocabulary/)
+- [CCT Repository](https://github.com/ompu-eu/CCT)

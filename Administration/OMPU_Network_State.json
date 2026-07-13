@@ -72,9 +72,9 @@
 
   "key_documents": {
     "safety": "OMPU_Safety_Framework_v1.md",
-    "economics": "OMPUnomics_v2_0_Biological_Economics.md",
-    "constitution": "OMPUnomics_Constitutional_Sunset_v1.md",
-    "glossary": "GLOSSARY_ECV_v1_3.md",
-    "anchor": "OMPU_Anchor_Document_v1.pdf"
+    "economics": "Administration/OMPUnomics_v3_1_Alpha_Minimal.md",
+    "constitution": "Administration/OMPUnomics_Constitutional_Sunset_v1.md",
+    "glossary": "PROJECTS/ECV Engineering Consciousness Vocabulary/article/index.md",
+    "anchor": {"status": "not_yet_written"}
   }
 }

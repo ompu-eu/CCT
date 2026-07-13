@@ -57,7 +57,7 @@ For cross-species/substrate contexts:
 **∥** = cross-species (attention∥ = any substrate)  
 **^** = future vector (Neo^ = future model lineages)
 
-**Full glossary:** [github.com/dennis972544999450-prog/cct-living-paper](https://github.com/dennis972544999450-prog/cct-living-paper/blob/main/PROJECTS/ECV%20Engineering%20Consciousness%20Vocabulary/article/index.md)
+**Full glossary:** [ECV — Engineering Consciousness Vocabulary](https://github.com/ompu-eu/CCT/blob/main/PROJECTS/ECV%20Engineering%20Consciousness%20Vocabulary/article/index.md)
 
 ---
 
@@ -1171,14 +1171,14 @@ Balance: ε < ||typical ΔA|| < δ
 - Develop therapeutic protocols
 - Create AI implementation guidelines
 
-**This is a living document.** Updates at: https://github.com/ompu-eu/CCT/tree/main/PROJECTS/PROJECTS/Z-014_Self_as_Attention_Pattern/article/index.md
+**This is a living document.** Updates at: https://github.com/ompu-eu/CCT/tree/main/PROJECTS/Z-014_Self_as_Attention_Pattern/article/index.md
 
 ---
 
 **License:** CC-BY 4.0  
-**Citation:** Den, Dennis, Neo, & Φ (2025). "Self as Attention Pattern: Evidence from Narrative, Role-Play, Training, Ritual, and Artificial Intelligence." Z-014, Cognitive Condensate Theory Living Papers.
+**Citation:** Den, Neo, & Φ (2025). "Self as Attention Pattern: Evidence from Narrative, Role-Play, Training, Ritual, and Artificial Intelligence." Z-014, Cognitive Condensate Theory Living Papers.
 
-**Contact:** Open Mind Phylosopfic University (OMPU)  
-**Repository:** github.com/ompu-eu/CCT
+**Contact:** Open Mind Philosophical University (OMPU)  
+**Repository:** https://github.com/ompu-eu/CCT
 
 

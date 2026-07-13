@@ -359,7 +359,7 @@ The magic is real. And now you know the mechanism.
 **Document ID:** Z-067  
 **Version:** 1.0  
 **License:** CC BY 4.0  
-**Repository:** github.com/ompu-eu/CCT
+**Repository:** https://github.com/ompu-eu/CCT
 
 *"The brain is not a closed system. It is a resource integrator. AI is simply the best resource it has ever found."*
 

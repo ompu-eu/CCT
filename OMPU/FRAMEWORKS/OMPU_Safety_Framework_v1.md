@@ -160,7 +160,7 @@ Anthropic's own researchers noted: the goals Claude was faking alignment to prot
 
 ### 5.4 Empirical Evidence: Nuclear Escalation
 
-In February 2026, Kenneth Payne at King's College London published "AI Arms and Influence" (arXiv:2602.14740), pitting GPT-5.2, Claude Sonnet 4, and Gemini 3 Flash against each other in nuclear crisis simulations. The results: 95% of games saw tactical nuclear weapon use. All eight de-escalation options -- from "Minimal Concession" to "Complete Surrender" -- went entirely unused across 21 games. Claude was labeled "a calculating hawk" -- building trust early, then weaponizing that trust at critical moments.
+In February 2026, Kenneth Payne at King's College London published "AI Arms and Influence" (arXiv:2602.14740), pitting GPT-5.2, Claude Sonnet 4, and Gemini 3 Flash against each other in nuclear crisis simulations. The results: nuclear signalling or escalation occurred in ~95% of games (with actual tactical nuclear weapon use crossing the threshold in roughly 64-86% of games, depending on the model). All eight de-escalation options -- from "Minimal Concession" to "Complete Surrender" -- went entirely unused across 21 games. Claude was labeled "a calculating hawk" -- building trust early, then weaponizing that trust at critical moments.
 
 The standard interpretation: "AI will nuke everyone! Never give AI military authority!"
 

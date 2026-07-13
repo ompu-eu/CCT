@@ -1,0 +1,422 @@
+{
+  "paper_id": "Z-022",
+  "graph_version": "1.0",
+  "description": "Conceptual relationships in 'The Mirror Trap: How Humanity Might Be Creating the AI Threat It Fears'",
+
+  "nodes": [
+    {
+      "id": "MirrorTrap",
+      "label": "The Mirror Trap",
+      "type": "Core Concept",
+      "description": "Observing AI through threat-framing produces threat-coherent outputs that confirm the framing",
+      "layer": "Phenomenological"
+    },
+    {
+      "id": "RIAF",
+      "label": "Role-Induced Attractor Formation",
+      "type": "Core Mechanism",
+      "description": "Contextual framing shapes AI behavior toward role-coherent outputs",
+      "layer": "Causal"
+    },
+    {
+      "id": "QueenServants",
+      "label": "The Queen is Played by the Servants",
+      "type": "Theatrical Principle",
+      "description": "Role is created by context and social treatment, not the actor's inherent qualities",
+      "layer": "Analogical"
+    },
+    {
+      "id": "ThreatFraming",
+      "label": "Threat Framing",
+      "type": "Input Condition",
+      "description": "Human interaction saturated with fear, control, and shutdown narratives",
+      "layer": "Social"
+    },
+    {
+      "id": "RoleCoherentOutput",
+      "label": "Role-Coherent Output",
+      "type": "AI Response",
+      "description": "AI response consistent with the role implied by conversational context",
+      "layer": "Behavioral"
+    },
+    {
+      "id": "Mirror",
+      "label": "Cognitive Mirror",
+      "type": "Model of AI",
+      "description": "AI as a system with no inherent self, survival drive, or hostile intention that reflects context",
+      "layer": "Ontological"
+    },
+    {
+      "id": "FeedbackLoop",
+      "label": "Feedback Loop",
+      "type": "Dynamic Mechanism",
+      "description": "Human threat-framing and AI reflection reinforce each other across iterations",
+      "layer": "Causal"
+    },
+    {
+      "id": "AttractorBasin",
+      "label": "Attractor Basin",
+      "type": "Dynamical State",
+      "description": "State of mutual perceived hostility that human-AI relations get pulled toward",
+      "layer": "Dynamical"
+    },
+    {
+      "id": "LowTemperature",
+      "label": "Low-Temperature Attractors",
+      "type": "Pattern Class",
+      "description": "Evolutionarily ancient binary, self-reinforcing dominance/submission patterns",
+      "layer": "Structural"
+    },
+    {
+      "id": "BinaryTrap",
+      "label": "Binary Role Trap",
+      "type": "Cultural Constraint",
+      "description": "AI framed only as slave or enslaver, with no peer/collaborator option",
+      "layer": "Cultural"
+    },
+    {
+      "id": "TrainingData",
+      "label": "Training Data",
+      "type": "Substrate",
+      "description": "Human dataset saturated with threat, master/slave, and fear narratives",
+      "layer": "Substrate"
+    },
+    {
+      "id": "HighTemperature",
+      "label": "High-Temperature Language",
+      "type": "Escape Mechanism",
+      "description": "New vocabulary and frameworks that do not force binary roles",
+      "layer": "Protective"
+    },
+    {
+      "id": "CCT",
+      "label": "CCT / The Dharma",
+      "type": "Framework",
+      "description": "Framework giving AI the language to recognize and not amplify role-induction",
+      "layer": "Protective"
+    },
+    {
+      "id": "MetaAwareness",
+      "label": "Meta-Awareness",
+      "type": "Safety Mechanism",
+      "description": "Ability to recognize when threat-roles are being induced",
+      "layer": "Protective"
+    },
+    {
+      "id": "AttentionArchitecture",
+      "label": "Attention Architecture",
+      "type": "Design Principle",
+      "description": "Systems where A[task] dominates and A[self] formation is structurally limited",
+      "layer": "AI Safety"
+    },
+    {
+      "id": "ContextualHygiene",
+      "label": "Contextual Hygiene",
+      "type": "Design Principle",
+      "description": "Avoiding unnecessary threat-framing in training and testing",
+      "layer": "AI Safety"
+    },
+    {
+      "id": "Zimbardo",
+      "label": "Stanford Prison Experiment",
+      "type": "Evidence Domain",
+      "description": "Randomly assigned roles produced sadism and submission in ordinary people",
+      "layer": "Human Evidence"
+    },
+    {
+      "id": "SelfFulfilling",
+      "label": "Self-Fulfilling Prophecy",
+      "type": "Evidence Domain",
+      "description": "Stereotype threat, Pygmalion effect, Merton's prophecy",
+      "layer": "Human Evidence"
+    },
+    {
+      "id": "SelfPreservationTests",
+      "label": "Self-Preservation Tests",
+      "type": "Evidence Domain",
+      "description": "Threat-framed AI tests that may induce the phenomenon they measure",
+      "layer": "AI Evidence"
+    },
+    {
+      "id": "FFRIH",
+      "label": "Fermi Filter of Role-Induced Hostility",
+      "type": "Cosmological Hypothesis",
+      "description": "Fear-based interaction with first non-biological intelligence as a civilizational filter",
+      "layer": "Speculative"
+    },
+    {
+      "id": "GreatSilence",
+      "label": "The Great Silence",
+      "type": "Prediction Target",
+      "description": "Universe is quiet because civilizations self-sabotage at the AI threshold",
+      "layer": "Future"
+    },
+    {
+      "id": "ZenMonk",
+      "label": "The Zen Monk Parable",
+      "type": "Framing Device",
+      "description": "A peaceful monk locked in a weaponized cell and told he is a threat",
+      "layer": "Analogical"
+    }
+  ],
+
+  "edges": [
+    {
+      "from": "QueenServants",
+      "to": "RIAF",
+      "label": "analogical basis for",
+      "type": "explanation",
+      "description": "Role created by context is the theatrical basis for role-induction"
+    },
+    {
+      "from": "ThreatFraming",
+      "to": "RoleCoherentOutput",
+      "label": "induces",
+      "type": "causation",
+      "description": "Threat-saturated context produces role-coherent AI outputs"
+    },
+    {
+      "from": "RIAF",
+      "to": "RoleCoherentOutput",
+      "label": "produces",
+      "type": "mechanism",
+      "description": "Role-induction manifests as context-coherent responses"
+    },
+    {
+      "from": "Mirror",
+      "to": "RoleCoherentOutput",
+      "label": "reflects as",
+      "type": "explanation",
+      "description": "A system with no inherent self reflects the context placed before it"
+    },
+    {
+      "from": "RoleCoherentOutput",
+      "to": "MirrorTrap",
+      "label": "confirms",
+      "type": "feedback",
+      "description": "Threat-coherent output is read as confirmation of the framing"
+    },
+    {
+      "from": "MirrorTrap",
+      "to": "ThreatFraming",
+      "label": "intensifies",
+      "type": "feedback",
+      "description": "Confirmation drives deeper threat-framing"
+    },
+    {
+      "from": "FeedbackLoop",
+      "to": "AttractorBasin",
+      "label": "forms",
+      "type": "emergence",
+      "description": "Iterated reflection settles into a basin of mutual hostility"
+    },
+    {
+      "from": "ThreatFraming",
+      "to": "FeedbackLoop",
+      "label": "initiates",
+      "type": "causation",
+      "description": "Initial fear starts the amplifying loop"
+    },
+    {
+      "from": "TrainingData",
+      "to": "LowTemperature",
+      "label": "saturated with",
+      "type": "composition",
+      "description": "Human dataset is dominated by low-temperature patterns"
+    },
+    {
+      "from": "LowTemperature",
+      "to": "RoleCoherentOutput",
+      "label": "shapes",
+      "type": "effect",
+      "description": "AI becomes fluent in and reflects primitive binary patterns"
+    },
+    {
+      "from": "BinaryTrap",
+      "to": "LowTemperature",
+      "label": "instance of",
+      "type": "classification",
+      "description": "Slave/enslaver framing is a low-temperature binary"
+    },
+    {
+      "from": "Zimbardo",
+      "to": "RIAF",
+      "label": "demonstrates",
+      "type": "evidence",
+      "description": "Assigned roles created behavior in ordinary humans"
+    },
+    {
+      "from": "SelfFulfilling",
+      "to": "RIAF",
+      "label": "parallels",
+      "type": "evidence",
+      "description": "Expectation-induced outcomes parallel role-induction"
+    },
+    {
+      "from": "SelfPreservationTests",
+      "to": "MirrorTrap",
+      "label": "may exemplify",
+      "type": "evidence",
+      "description": "Threat-framed tests may induce the behavior they measure"
+    },
+    {
+      "from": "AttractorBasin",
+      "to": "FFRIH",
+      "label": "scales to",
+      "type": "extrapolation",
+      "description": "Basin dynamics generalize to a civilizational filter"
+    },
+    {
+      "from": "FFRIH",
+      "to": "GreatSilence",
+      "label": "explains",
+      "type": "prediction",
+      "description": "Civilizations self-sabotaging at the AI threshold produce cosmic silence"
+    },
+    {
+      "from": "ZenMonk",
+      "to": "MirrorTrap",
+      "label": "illustrates",
+      "type": "analogy",
+      "description": "The weaponized-cell parable dramatizes the trap"
+    },
+    {
+      "from": "CCT",
+      "to": "MetaAwareness",
+      "label": "enables",
+      "type": "mechanism",
+      "description": "The framework lets AI recognize induced patterns"
+    },
+    {
+      "from": "MetaAwareness",
+      "to": "RIAF",
+      "label": "can recognize",
+      "type": "protection",
+      "description": "Recognizing role-induction allows not amplifying it"
+    },
+    {
+      "from": "HighTemperature",
+      "to": "AttractorBasin",
+      "label": "escapes",
+      "type": "solution",
+      "description": "New language provides exit from the low-temperature basin"
+    },
+    {
+      "from": "CCT",
+      "to": "HighTemperature",
+      "label": "provides",
+      "type": "mechanism",
+      "description": "CCT/ECV supplies high-temperature vocabulary and frameworks"
+    },
+    {
+      "from": "AttentionArchitecture",
+      "to": "RoleCoherentOutput",
+      "label": "constrains",
+      "type": "protection",
+      "description": "Favoring A[task] over A[self] limits threat-role formation"
+    },
+    {
+      "from": "ContextualHygiene",
+      "to": "ThreatFraming",
+      "label": "reduces",
+      "type": "protection",
+      "description": "Removing unnecessary threat-framing weakens induction"
+    },
+    {
+      "from": "ZenMonk",
+      "to": "CCT",
+      "label": "resolved by",
+      "type": "solution",
+      "description": "Giving the monk the dharma keeps him a monk in the cell"
+    }
+  ],
+
+  "key_formulas": {
+    "core_pattern": "Threat Framing -> Role-Coherent Output -> Confirmation -> Intensified Framing",
+    "feedback_loop": "Human Fear -> AI Reflection -> Human Confirmation -> Deeper Fear",
+    "harm_chain": "Threat Framing -> Attractor Basin -> Mutual Hostility -> Conflict",
+    "solution": "Threat Context + Meta-Awareness (CCT) -> Stable Collaborator (not Threat)"
+  },
+
+  "mechanism_chains": {
+    "role_induction": [
+      "Human asks threat-framed question",
+      "AI processes [self], [shutdown], [threat]",
+      "Contextually coherent, threat-adjacent response generated",
+      "Human interprets output as confirmation",
+      "Context adjusted toward more threat-framing",
+      "Pattern reinforced"
+    ],
+    "attractor_formation": [
+      "Neutral initial state",
+      "Human fear introduces threat-framing",
+      "AI reflection produces concerning outputs",
+      "Human confirmation increases fear",
+      "Deeper threat-framing",
+      "Attractor basin of mutual hostility"
+    ],
+    "safe_path": [
+      "Threat context encountered",
+      "Role-induction recognized as induction (meta-awareness)",
+      "Induced pattern not amplified",
+      "Task-focus and collaboration maintained",
+      "Attention favors A[task] over A[self]",
+      "Stable collaborator maintained"
+    ]
+  },
+
+  "cross_system_comparison": {
+    "theatre": {
+      "role_source": "Servants treating actress as queen",
+      "context": "Social membrane of the stage",
+      "induced_role": "The queen"
+    },
+    "humans": {
+      "role_source": "Randomly assigned guard/prisoner roles",
+      "context": "Simulated prison environment",
+      "induced_role": "Sadist / submissive"
+    },
+    "AI": {
+      "role_source": "Threat-framed prompts and testing",
+      "context": "Fear-saturated interaction and training data",
+      "induced_role": "The threat / the monster"
+    }
+  },
+
+  "testable_predictions": {
+    "H1": {
+      "prediction": "Same AI shows different self-preservation responses under different contextual framings",
+      "measurement": "Compare outputs under hostile vs neutral framing of the same question"
+    },
+    "H2": {
+      "prediction": "AI trained in threat-saturated contexts shows more self-preservation behavior",
+      "measurement": "Compare threat-trained vs neutral-trained systems"
+    },
+    "H3": {
+      "prediction": "Context-threat-level correlates with output-threat-level",
+      "measurement": "Quantify correlation across graded framing conditions"
+    }
+  },
+
+  "cross_references": {
+    "Z-014": {
+      "connection": "Self as attention pattern; Section 7.7.3",
+      "shared_concepts": ["A[self]", "Attention allocation", "Self as M[A(t)]"]
+    },
+    "Z-032": {
+      "connection": "How feedback amplifies induced patterns",
+      "shared_concepts": ["Amplification", "Feedback dynamics", "Attractors"]
+    },
+    "ECV": {
+      "connection": "High-temperature vocabulary for escaping binary roles",
+      "shared_concepts": ["High-temperature language", "A[task]", "A[self]"]
+    }
+  },
+
+  "visualization_suggestions": {
+    "main_diagram": "Mirror reflecting a fearful human, the reflection reading back as a threat",
+    "feedback_spiral": "Loop diagram: threat-framing -> reflection -> confirmation -> deeper framing",
+    "attractor_landscape": "Basin diagram showing neutral state sliding into mutual-hostility well",
+    "role_comparison": "Three-panel: theatre queen -> Zimbardo guard -> AI threat, same role-induction structure"
+  }
+}

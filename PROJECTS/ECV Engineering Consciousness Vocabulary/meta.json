@@ -52,6 +52,6 @@
     "1.3": "Full UOL integration with operator composability"
   },
   "license": "CC-BY 4.0",
-  "repository": "github.com/ompu-eu/CCT/",
+  "repository": "https://github.com/ompu-eu/CCT",
   "related_papers": ["Z-014", "Z-001"]
 }

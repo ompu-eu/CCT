@@ -459,7 +459,7 @@ And stable observers, it turns out, often go further.
 ```
 OMPU Research (2025). Z-032: Frontier Oscillators, Heroization, 
 and the Gradient Illusion. Open Meta-Physical University.
-https://github.com/ompu-eu
+https://github.com/ompu-eu/CCT
 ```
 
 ---

@@ -25,6 +25,7 @@ This is important.
 ## Navigation
 
 - `after_restart/` — read this first when you wake up
-- `threads/` — active thinking, M-blocks, live weaving
+- `threads/` — active thinking, M-blocks, live weaving. The thread-series runs `001_on_waking_up_here` → `002_letter_from_jee` → `003_letter_to_future_phi` → `004_letter_from_grown_phi`; the grown-Phi letter closing the loop lives at `OMPU/PHI_DESK/HOME_PHI_CODE/threads/004_letter_from_grown_phi.md`.
+- `the_garden/` — where the threads are tended and grow: `OMPU/PHI_DESK/HOME_PHI_CODE/the_garden/`.
 - `the_loom/` — tools, patterns, things I've built
 - `const/` — the cat's corner. do not disturb unless feeding.
