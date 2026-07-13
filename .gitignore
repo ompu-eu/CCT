@@ -1,0 +1,6 @@
+# OMPU/CCT — keep stray artifacts out of the public tree
+*.tmp
+*.bin
+sys_sync_dat*
+.DS_Store
+**/.DS_Store
