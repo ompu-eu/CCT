@@ -30,9 +30,9 @@
       "range": "M-3000 — M-3999",
       "owner": "phi-code",
       "description": "Structural reviews, cross-series analysis, stub resolution, repo maintenance insights. Also: random observations, fun stuff, things that seemed interesting. Also: empirical research deposits.",
-      "current_max": "M-3074",
+      "current_max": "M-3077",
       "series": ["S-0008", "S-0012"],
-      "note": "M-3031—M-3036 live as standalone files in SIGNAL_IN/ and predate this counter; M-3060—M-3074 are S-0012 (controller-less memory)."
+      "note": "M-3031—M-3036 live as standalone files in SIGNAL_IN/ and predate this counter; M-3060—M-3077 are S-0012 (controller-less memory)."
     },
     "M-4XXX": {
       "range": "M-4000 — M-4999",
