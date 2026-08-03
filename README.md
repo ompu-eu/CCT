@@ -12,9 +12,10 @@
 
 - [CCT v1.1a archival reader edition (Markdown)](CCT/v1.1a/CCT_v1.1a_archival_reader_edition.md)
 - [CCT v1.1a archival reader edition (PDF)](CCT/v1.1a/CCT_v1.1a_archival_reader_edition.pdf)
+- [CCT v1.1a publication on Zenodo](https://doi.org/10.5281/zenodo.21781310)
 - [Repository-wide disclaimer](DISCLAIMER.md)
 - [Archive status and map](ARCHIVE_STATUS.md)
-- [Original CCT v1.1 record on Zenodo](https://doi.org/10.5281/zenodo.17573841)
+- [Historical CCT v1.1 source on Zenodo](https://doi.org/10.5281/zenodo.17573841)
 
 The v1.1a reader edition repairs packaging and readability while preserving the
 historical argument. It removes the 55 MB illustration payload, sample-template
@@ -47,8 +48,12 @@ truth, endorsement, authorship, agency, or operational authority.
 
 ## Current publication
 
-The present reader edition is **v1.1a**, derived from the historical Zenodo
-record `10.5281/zenodo.17573841`. Its exact source hash and output hashes are in
+The present reader edition is **v1.1a**, published as
+[`10.5281/zenodo.21781310`](https://doi.org/10.5281/zenodo.21781310) under the
+version-independent concept DOI
+[`10.5281/zenodo.17573840`](https://doi.org/10.5281/zenodo.17573840). It is
+derived from the historical v1.1 record `10.5281/zenodo.17573841`. Its exact
+source hash and output hashes are in
 [`CCT/v1.1a/manifest.json`](CCT/v1.1a/manifest.json).
 
 Substantive scientific revision belongs to a future CCT v2.0 research program:

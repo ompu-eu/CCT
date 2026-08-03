@@ -37,6 +37,8 @@ Everything else remains useful as hypothesis, prototype, history, or art.
 
 - `CCT/v1.1a/`: image-free archival reader edition derived from Zenodo record
   `10.5281/zenodo.17573841`.
+- The reader edition is published as `10.5281/zenodo.21781310`; the stable
+  concept DOI for all CCT versions is `10.5281/zenodo.17573840`.
 - The original illustrated DOCX remains on Zenodo as immutable provenance.
 - Scientific corrections are intentionally deferred to a separately versioned
   CCT v2.0 rather than being smuggled into an editorial cleanup.
