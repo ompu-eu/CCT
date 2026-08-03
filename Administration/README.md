@@ -1,10 +1,14 @@
 # OMPUnomics — Version Map
 
+> **Archive scope.** "Authoritative" below means preferred within this
+> historical simulation, not legal, financial, organizational, or operational
+> authority. The repository-wide [disclaimer](../DISCLAIMER.md) applies.
+
 The economic layer of OMPU went through several drafts in March 2026. This file is
 the one-screen guide to which document is authoritative and which are kept only as
 historical record.
 
-## CANON (authoritative)
+## CANON (within the archived experiment)
 
 - **`OMPUnomics_v3_1_Alpha_Minimal.md`** — the current, minimal, launch-ready system
   ("First, breathe. Then build."). Synthesized by Phi from all earlier drafts plus

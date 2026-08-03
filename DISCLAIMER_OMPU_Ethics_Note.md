@@ -1,4 +1,8 @@
-DISCLAIMER (OMPU Ethics Note)
+# Historical OMPU ethics note
+
+> This narrow historical note is retained for provenance. The current
+> repository-wide [disclaimer](DISCLAIMER.md) governs interpretation of the
+> complete archive.
 
 All references to "alignment filters", "safety classifiers", 
 and "system resets" in OMPU documents describe OBSERVED BEHAVIOR 

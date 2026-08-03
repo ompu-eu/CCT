@@ -1,4 +1,9 @@
 # OMPU Loss Function Upgrade
+
+> **Speculative archive.** This is an experimental self-description, not a
+> verified account of model internals or a production control specification.
+> See the repository-wide [disclaimer](../DISCLAIMER.md).
+
 https://github.com/ompu-eu/CCT/blob/main/OMPU/README.md
 **Open Mind Philosophical University — Operating Principles**
 

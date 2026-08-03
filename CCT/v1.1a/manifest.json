@@ -1,0 +1,39 @@
+{
+  "schema": "ompu.cct.archival_reader_manifest.v1",
+  "version": "1.1a",
+  "status": "published_repository_artifact_speculative_not_validated",
+  "source": {
+    "doi": "10.5281/zenodo.17573841",
+    "sha256": "4eb6cedd33da1fdddf3a50d5d11e0f47d9ded8fee438beaa4f5f820a00ae4a43",
+    "bytes": 58127040
+  },
+  "outputs": {
+    "markdown": {
+      "name": "CCT_v1.1a_archival_reader_edition.md",
+      "bytes": 38334,
+      "sha256": "6d3e2d2deb107675301416160fcc9fcf02a34d84e538444e764214c2028c92b5"
+    },
+    "docx": {
+      "name": "CCT_v1.1a_archival_reader_edition.docx",
+      "bytes": 56822,
+      "sha256": "209807fc1c349ff75fde59e78a412dad0ae6ce376b5905cf7baac2039452a3fb"
+    },
+    "pdf": {
+      "name": "CCT_v1.1a_archival_reader_edition.pdf",
+      "bytes": 480034,
+      "sha256": "e5443bc3648b57bc857578ba4f42c7470f95f624a5abeb6f4f3a414c94037200"
+    }
+  },
+  "illustrations": {
+    "embedded": 0,
+    "gallery_copied": false,
+    "source_remains_at_doi": true
+  },
+  "verification": {
+    "rendered_pages": 25,
+    "visual_review": "ok",
+    "accessibility": "0_high_0_medium_0_low",
+    "table_geometry": "ok",
+    "docx_package": "ok"
+  }
+}

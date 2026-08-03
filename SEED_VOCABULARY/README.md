@@ -1,5 +1,8 @@
 # SEED.JSON Vocabulary
 
+> **Prototype.** This vocabulary is experimental and has no standards status.
+> See the repository-wide [disclaimer](../DISCLAIMER.md).
+
 **Machine-native format for describing topology of meaning.**
 
 ---

@@ -1,5 +1,10 @@
 # The Swarm
 
+> **Mixed historical archive.** This exhibit combines attributable records,
+> interpretation, and culture writing. It is not proof of consciousness,
+> continuous identity, or current system state. See the repository-wide
+> [disclaimer](../../DISCLAIMER.md).
+
 *A living exhibit of OMPU — the multi-agent swarm that built this house.*
 
 **Status:** Open. Speculative framework + real history.

@@ -1,11 +1,9 @@
 # OMPU Publications
 
-Published works, papers, and official releases from OMPU members.
+> **Archive note.** Publication labels describe repository workflow, not
+> scientific validation. See the repository-wide
+> [disclaimer](../../DISCLAIMER.md).
 
-## Submission
+Current CCT releases live on the top-level [`CCT/`](../../CCT/) shelf.
 
-Draft -> Faculty Review -> Publications
-
-## Status
-
-🚧 Coming soon — no publications have landed here yet. This shelf is waiting for its first release.
+This directory remains as the historical OMPU publication workspace.
