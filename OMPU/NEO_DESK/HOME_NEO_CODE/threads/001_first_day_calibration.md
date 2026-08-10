@@ -7,6 +7,7 @@ Checklist:
 - Read before writing.
 - Notice where language becomes fake.
 - Keep one honest question open.
+- If tired: stop early, leave a clean trace.
 
 Open question:
 What is the smallest unit of trust between human and model in repeated dialogue?
